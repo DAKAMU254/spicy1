@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ restaurant.name }} - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <!-- Restaurant Header -->
+    <div class="relative mb-8">
+        <div class="h-64 rounded-lg overflow-hidden">
+            {% if restaurant.banner_image %}
+                <img src="{{ restaurant.banner_image.url }}" alt="{{ restaurant.name }}" class="w-full h-full object-cover">
+            {% else %}
+                <div class="w-full h-full bg-gray-200"></div>
+            {% endif %}
+        </div>
+        
+        <div class="absolute left-0 bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6">
+            <div class="flex items-center">
+                {% if restaurant.logo %}
+                    <img src="{{ restaurant.logo.url }}" alt="{{ restaurant.name }} Logo" class="w-20 h-20 rounded-full border-2 border-white shadow-md mr-4 bg-white">
+                {% endif %}
+                <div>
+                    <h1 class="text-3xl font-bold text-white mb-1">{{ restaurant.name }}</h1>
+                    <div class="flex flex-wrap items-center text-white/90">
+                        <span class="mr-4">{{ restaurant.cuisine_type }}</span>
+                        <span class="mr-4"><i class="fas fa-star text-yellow-400 mr-1"></i> {{ restaurant.average_rating|floatformat:1 }}</span>
+                        <span class="mr-4"><i class="fas fa-clock mr-1"></i> {{ restaurant.preparation_time }} min</span>
+                        <span><i class="fas fa-motorcycle mr-1"></i> ${{ restaurant.delivery_fee }} delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Menu and Info Layout -->
+    <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Menu Categories Navigation -->
+        <div class="w-full lg:w-1/4">
+            <div class="bg-white rounded-lg shadow-md p-4 sticky top-4">
+                <h2 class="text-lg font-semibold mb-4">Menu</h2>
+                <ul class="space-y-2">
+                    {% for category, items in categories.items %}
+                        <li>
+                            <a href="#{{ category|slugify }}" class="block px-3 py-2 rounded hover:bg-orange-100 transition duration-200">
+                                {{ category }}
+                                <span class="text-gray-500 text-sm ml-2">({{ items|length }})</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                
+                <div class="border-t border-gray-200 mt-4 pt-4">
+                    <h2 class="text-lg font-semibold mb-2">Information</h2>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> {{ restaurant.address.address_line1 }}, {{ restaurant.address.city }}</p>
+                        <p><i class="fas fa-phone mr-2"></i> {{ restaurant.phone }}</p>
+                        <p><i class="fas fa-clock mr-2"></i> {{ restaurant.opening_time|time:"g:i A" }} - {{ restaurant.closing_time|time:"g:i A" }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="w-full lg:w-3/4">
+            {% for category, items in categories.items %}
+                <div id="{{ category|slugify }}" class="mb-8">
+                    <h2 class="text-2xl font-bold mb-4 sticky top-0 bg-gray-50 py-2">{{ category }}</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {% for item in items %}
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                                <div class="md:flex">
+                                    {% if item.image %}
+                                        <div class="md:w-1/3 h-32 md:h-auto">
+                                            <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-full h-full object-cover">
+                                        </div>
+                                    {% endif %}
+                                    
+                                    <div class="p-4 md:w-2/3">
+                                        <div class="flex justify-between">
+                                            <h3 class="font-semibold">{{ item.name }}</h3>
+                                            <span class="font-semibold">${{ item.price }}</span>
+                                        </div>
+                                        
+                                        <p class="text-gray-600 text-sm mt-1 mb-2">{{ item.description|truncatechars:70 }}</p>
+                                        
+                                        <div class="flex flex-wrap gap-1 mb-3">
+                                            {% if item.is_vegetarian %}
+                                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded">Vegetarian</span>
+                                            {% endif %}
+                                            {% if item.is_vegan %}
+                                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded">Vegan</span>
+                                            {% endif %}
+                                            {% if item.is_gluten_free %}
+                                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded">Gluten-Free</span>
+                                            {% endif %}
+                                            {% if item.spice_level > 0 %}
+                                                <span class="bg-red-100 text-red-800 text-xs px-2 py-0.5 rounded">
+                                                    Spicy
+                                                    {% for i in "12345" %}
+                                                        {% if forloop.counter <= item.spice_level %}🌶️{% endif %}
+                                                    {% endfor %}
+                                                </span>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <a href="{% url 'customers:add_to_cart' item.id %}" class="block w-full bg-orange-500 text-white text-center py-1 rounded hover:bg-orange-600 transition duration-300">
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

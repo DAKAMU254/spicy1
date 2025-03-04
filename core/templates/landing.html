@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}FoodRunner - Food Delivery Service{% endblock %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <!-- Hero Section -->
+    <section class="w-full py-12 md:py-24 bg-gradient-to-r from-orange-500 to-orange-400 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Delicious Food Delivered Fast</h1>
+                <p class="text-xl mb-8">Order from your favorite restaurants and get hot meals delivered straight to your door.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="{% url 'register' %}" class="bg-white text-orange-500 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-300 text-center">Sign Up</a>
+                    <a href="#restaurants" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-white hover:text-orange-500 transition duration-300 text-center">View Restaurants</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="{% static 'images/hero-food.png' %}" alt="Delicious Food" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="w-full py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 p-4 rounded-full mb-4">
+                        <i class="fas fa-store text-orange-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Choose a Restaurant</h3>
+                    <p class="text-gray-600">Browse through our extensive list of restaurants and cuisines.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 p-4 rounded-full mb-4">
+                        <i class="fas fa-utensils text-orange-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Select Your Favorite Food</h3>
+                    <p class="text-gray-600">Choose from a variety of delicious meals from the restaurant's menu.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-orange-100 p-4 rounded-full mb-4">
+                        <i class="fas fa-bicycle text-orange-500 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600">Get your food delivered to your doorstep in no time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Featured Restaurants Section -->
+<section class="w-full py-16 bg-gray-50" id="restaurants">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Restaurants</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% if featured_restaurants %}
+                {% for restaurant in featured_restaurants %}
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                        {% if restaurant.banner_image %}
+                            <img src="{{ restaurant.banner_image.url }}" alt="{{ restaurant.name }}" class="w-full h-48 object-cover">
+                        {% else %}
+                            <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                                <i class="fas fa-utensils text-gray-400 text-3xl"></i>
+                            </div>
+                        {% endif %}
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-semibold">{{ restaurant.name }}</h3>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <span class="ml-1 text-gray-700">{{ restaurant.average_rating|floatformat:1 }}</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 mb-4">{{ restaurant.cuisine_type }}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600"><i class="fas fa-clock mr-1"></i> {{ restaurant.preparation_time }} min</span>
+                                <span class="text-gray-600"><i class="fas fa-motorcycle mr-1"></i> ${{ restaurant.delivery_fee }}</span>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-span-3 text-center py-8">
+                    <p class="text-gray-600">No restaurants available yet. Check back soon!</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="text-center mt-10">
+            <a href="{% url 'customers:restaurants' %}" class="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition duration-300">View All Restaurants</a>
+        </div>
+    </div>
+</section>
+
+    <!-- App Download Section -->
+    <section class="w-full py-16 bg-orange-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-4">Download Our Mobile App</h2>
+                <p class="text-xl text-gray-700 mb-8">Get the full experience on your phone. Order food anytime, anywhere.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300">
+                        <i class="fab fa-apple text-2xl mr-2"></i>
+                        <div>
+                            <div class="text-xs">Download on the</div>
+                            <div class="text-lg font-semibold">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition duration-300">
+                        <i class="fab fa-google-play text-2xl mr-2"></i>
+                        <div>
+                            <div class="text-xs">Get it on</div>
+                            <div class="text-lg font-semibold">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="{% static 'images/app-mockup.png' %}" alt="Mobile App" class="mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="w-full py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                            <img src="{% static 'images/customer1.jpg' %}" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"FoodRunner has made ordering food so easy! The delivery is always on time and the food arrives hot. Highly recommend!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                            <img src="{% static 'images/customer2.jpg' %}" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Michael Roberts</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Great selection of restaurants and the app is very user-friendly. I use FoodRunner at least twice a week!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4">
+                            <img src="{% static 'images/customer3.jpg' %}" alt="Customer" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Emily Wong</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The customer service is outstanding. Had an issue with my order once and they resolved it immediately. Very satisfied customer!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+
+{% block title %}Your Profile - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Your Profile</h1>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Sidebar Navigation -->
+        <div class="lg:col-span-1">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <div class="flex items-center mb-6">
+                    {% if request.user.profile_picture %}
+                        <img src="{{ request.user.profile_picture.url }}" alt="{{ request.user.get_full_name }}" class="w-16 h-16 rounded-full mr-4 object-cover">
+                    {% else %}
+                        <div class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gray-400 text-2xl"></i>
+                        </div>
+                    {% endif %}
+                    <div>
+                        <h2 class="font-semibold">{{ request.user.get_full_name }}</h2>
+                        <p class="text-gray-600 text-sm">{{ request.user.email }}</p>
+                    </div>
+                </div>
+                
+                <ul class="space-y-1">
+                    <li>
+                        <a href="#profile" class="block px-3 py-2 rounded-md bg-orange-100 text-orange-800 font-medium">
+                            <i class="fas fa-user mr-2"></i> Personal Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#addresses" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition duration-200">
+                            <i class="fas fa-map-marker-alt mr-2"></i> Addresses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'customers:orders' %}" class="block px-3 py-2 rounded-md hover:bg-gray-100 transition duration-200">
+                            <i class="fas fa-clipboard-list mr-2"></i> Order History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'logout' %}" class="block px-3 py-2 rounded-md text-red-600 hover:bg-red-50 transition duration-200">
+                            <i class="fas fa-sign-out-alt mr-2"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+            <!-- Personal Information -->
+            <div id="profile" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                <h2 class="text-xl font-semibold mb-4">Personal Information</h2>
+                
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="{{ user_form.first_name.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                First Name
+                            </label>
+                            {{ user_form.first_name }}
+                            {% if user_form.first_name.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in user_form.first_name.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ user_form.last_name.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Last Name
+                            </label>
+                            {{ user_form.last_name }}
+                            {% if user_form.last_name.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in user_form.last_name.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="{{ user_form.email.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Email
+                            </label>
+                            {{ user_form.email }}
+                            {% if user_form.email.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in user_form.email.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ user_form.phone_number.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Phone Number
+                            </label>
+                            {{ user_form.phone_number }}
+                            {% if user_form.phone_number.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in user_form.phone_number.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="{{ user_form.profile_picture.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                            Profile Picture
+                        </label>
+                        {% if request.user.profile_picture %}
+                            <div class="mb-2">
+                                <img src="{{ request.user.profile_picture.url }}" alt="{{ request.user.get_full_name }}" class="w-24 h-24 object-cover rounded-lg">
+                            </div>
+                        {% endif %}
+                        {{ user_form.profile_picture }}
+                        {% if user_form.profile_picture.errors %}
+                            <div class="text-red-500 text-sm mt-1">
+                                {% for error in user_form.profile_picture.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded hover:bg-orange-600 transition duration-200">
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Addresses -->
+            <div id="addresses" class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-semibold mb-4">Your Addresses</h2>
+                
+                {% if addresses %}
+                    <div class="space-y-4 mb-6">
+                        {% for address in addresses %}
+                            <div class="border rounded-lg p-4 {% if address.is_default %}bg-orange-50 border-orange-200{% endif %}">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <p class="font-medium">{{ address.address_line1 }}</p>
+                                        {% if address.address_line2 %}
+                                            <p>{{ address.address_line2 }}</p>
+                                        {% endif %}
+                                        <p>{{ address.city }}, {{ address.state }} {{ address.postal_code }}</p>
+                                        {% if address.is_default %}
+                                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-0.5 rounded mt-2 inline-block">Default</span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <a href="#" class="text-blue-500 hover:text-blue-700">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        {% if not address.is_default %}
+                                            <a href="#" class="text-red-500 hover:text-red-700">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="text-center py-6 mb-6">
+                        <p class="text-gray-600">You don't have any saved addresses yet.</p>
+                    </div>
+                {% endif %}
+                
+                <a href="#" class="inline-block bg-gray-200 text-gray-800 py-2 px-4 rounded hover:bg-gray-300 transition duration-200">
+                    <i class="fas fa-plus mr-2"></i> Add New Address
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

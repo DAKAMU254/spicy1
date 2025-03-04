@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Payment - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto my-8 px-4">
+    <h1 class="text-3xl font-bold mb-6">Complete Your Payment</h1>
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+        <h2 class="text-xl font-semibold mb-4">Order Details</h2>
+        
+        <div class="mb-6">
+            <p class="mb-2"><strong>Order #:</strong> {{ order.id }}</p>
+            <p class="mb-2"><strong>Total Amount:</strong> ${{ order.total_amount }}</p>
+        </div>
+        
+        <div id="payment-form" class="mt-6">
+            <div id="card-element" class="border p-4 rounded-md mb-4">
+                <!-- Stripe Elements will insert the card input here -->
+            </div>
+            
+            <div id="card-errors" class="text-red-500 mb-4" role="alert"></div>
+            
+            <button id="submit-button" class="w-full bg-orange-500 text-white py-3 px-4 rounded-md hover:bg-orange-600 transition duration-300 font-medium">
+                Pay ${{ order.total_amount }}
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Include Stripe.js -->
+<script src="https://js.stripe.com/v3/"></script>
+
+<script>
+    // Initialize Stripe
+    const stripe = Stripe('{{ stripe_public_key }}');
+    const elements = stripe.elements();
+    
+    // Create card Element
+    const cardElement = elements.create('card');
+    cardElement.mount('#card-element');
+    
+    // Handle form submission
+    const form = document.getElementById('payment-form');
+    const submitButton = document.getElementById('submit-button');
+    const cardErrors = document.getElementById('card-errors');
+    
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        
+        // Disable the submit button to prevent multiple submissions
+        submitButton.disabled = true;
+        submitButton.textContent = 'Processing...';
+        
+        try {
+            // Create payment method
+            const {paymentMethod, error} = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement
+            });
+            
+            if (error) {
+                // Show error to customer
+                cardErrors.textContent = error.message;
+                submitButton.disabled = false;
+                submitButton.textContent = 'Pay ${{ order.total_amount }}';
+            } else {
+                // Send paymentMethod.id to server
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = window.location.href;
+                
+                const hiddenInput = document.createElement('input');
+                hiddenInput.setAttribute('type', 'hidden');
+                hiddenInput.setAttribute('name', 'payment_method_id');
+                hiddenInput.setAttribute('value', paymentMethod.id);
+                
+                const csrfInput = document.createElement('input');
+                csrfInput.setAttribute('type', 'hidden');
+                csrfInput.setAttribute('name', 'csrfmiddlewaretoken');
+                csrfInput.setAttribute('value', '{{ csrf_token }}');
+                
+                form.appendChild(hiddenInput);
+                form.appendChild(csrfInput);
+                document.body.appendChild(form);
+                form.submit();
+            }
+        } catch (err) {
+            cardErrors.textContent = 'An unexpected error occurred. Please try again.';
+            submitButton.disabled = false;
+            submitButton.textContent = 'Pay ${{ order.total_amount }}';
+        }
+    });
+</script>
+{% endblock %}

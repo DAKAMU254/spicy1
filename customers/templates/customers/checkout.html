@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+
+{% block title %}Checkout - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto my-8 px-4">
+    <h1 class="text-3xl font-bold mb-6">Checkout</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Order Summary -->
+        <div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-4">Order Summary</h2>
+                    
+                    <div class="border-t border-gray-200 pt-4">
+                        {% for item in cart.items.all %}
+                            <div class="flex justify-between items-start py-3 border-b border-gray-200">
+                                <div>
+                                    <h3 class="font-medium">{{ item.quantity }}x {{ item.menu_item.name }}</h3>
+                                    {% if item.special_instructions %}
+                                        <p class="text-gray-600 text-sm">{{ item.special_instructions }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="font-medium">${{ item.subtotal }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="mt-4 space-y-2">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Subtotal</span>
+                            <span>${{ subtotal }}</span>
+                        </div>
+                        
+                        <div class="flex justify-between text-gray-600">
+                            <span>Delivery Fee</span>
+                            <span>${{ delivery_fee }}</span>
+                        </div>
+                        
+                        <div class="flex justify-between text-gray-600">
+                            <span>Tax</span>
+                            <span>${{ tax_amount }}</span>
+                        </div>
+                        
+                        <div class="flex justify-between font-bold text-lg pt-2 border-t">
+                            <span>Total</span>
+                            <span>${{ total }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-4">Delivery From</h2>
+                    
+                    <div class="flex items-center mb-4">
+                        {% if cart.restaurant.logo %}
+                            <img src="{{ cart.restaurant.logo.url }}" alt="{{ cart.restaurant.name }}" class="w-12 h-12 object-cover rounded-full mr-4">
+                        {% endif %}
+                        <div>
+                            <h3 class="font-semibold">{{ cart.restaurant.name }}</h3>
+                            <p class="text-gray-600 text-sm">{{ cart.restaurant.address.address_line1 }}, {{ cart.restaurant.address.city }}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-gray-600">
+                        <p><i class="fas fa-clock mr-2"></i> Estimated delivery time: 30-45 minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Checkout Form -->
+        <div>
+            <form method="post" id="checkout-form" class="bg-white rounded-lg shadow-md overflow-hidden">
+                {% csrf_token %}
+                
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-4">Delivery Address</h2>
+                    
+                    {% if addresses %}
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-medium mb-2">Use Saved Address</label>
+                            
+                            <div class="space-y-3">
+                                {% for address in addresses %}
+                                    <div class="flex items-start">
+                                        <input type="radio" name="use_existing_address" id="address-{{ address.id }}" value="{{ address.id }}" class="mt-1 mr-2" {% if address.is_default %}checked{% endif %}>
+                                        <label for="address-{{ address.id }}" class="cursor-pointer">
+                                            <div class="font-medium">{{ address.address_line1 }}</div>
+                                            {% if address.address_line2 %}
+                                                <div class="text-gray-600">{{ address.address_line2 }}</div>
+                                            {% endif %}
+                                            <div class="text-gray-600">{{ address.city }}, {{ address.state }} {{ address.postal_code }}</div>
+                                            {% if address.is_default %}
+                                                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded mt-1 inline-block">Default</span>
+                                            {% endif %}
+                                        </label>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            
+                            <div class="mt-3">
+                                <div class="flex items-start">
+                                    <input type="radio" name="use_existing_address" id="new-address" value="" class="mt-1 mr-2">
+                                    <label for="new-address" class="cursor-pointer font-medium">Use a new address</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="new-address-form" class="{% if addresses %}hidden{% endif %} border-t pt-4 mt-4">
+                    {% else %}
+                        <div id="new-address-form">
+                    {% endif %}
+                        <h3 class="font-medium mb-3">Enter New Address</h3>
+                        
+                        <div class="mb-3">
+                            <label for="{{ address_form.address_line1.id_for_label }}" class="block text-gray-700 text-sm font-medium mb-1">
+                                Address Line 1 *
+                            </label>
+                            {{ address_form.address_line1 }}
+                            <div class="text-red-500 text-sm mt-1 hidden" id="error-address_line1">This field is required</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="{{ address_form.address_line2.id_for_label }}" class="block text-gray-700 text-sm font-medium mb-1">
+                                Address Line 2
+                            </label>
+                            {{ address_form.address_line2 }}
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-3">
+                            <div>
+                                <label for="{{ address_form.city.id_for_label }}" class="block text-gray-700 text-sm font-medium mb-1">
+                                    City *
+                                </label>
+                                {{ address_form.city }}
+                                <div class="text-red-500 text-sm mt-1 hidden" id="error-city">This field is required</div>
+                            </div>
+                            
+                            <div>
+                                <label for="{{ address_form.state.id_for_label }}" class="block text-gray-700 text-sm font-medium mb-1">
+                                    State *
+                                </label>
+                                {{ address_form.state }}
+                                <div class="text-red-500 text-sm mt-1 hidden" id="error-state">This field is required</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="{{ address_form.postal_code.id_for_label }}" class="block text-gray-700 text-sm font-medium mb-1">
+                                Postal Code *
+                            </label>
+                            {{ address_form.postal_code }}
+                            <div class="text-red-500 text-sm mt-1 hidden" id="error-postal_code">This field is required</div>
+                        </div>
+                        
+                        <div class="mb-1">
+                            <div class="flex items-center">
+                                {{ address_form.is_default }}
+                                <label for="{{ address_form.is_default.id_for_label }}" class="ml-2 block text-sm text-gray-700">
+                                    Save as default address
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mt-6">
+                        <h2 class="text-xl font-semibold mb-4">Delivery Instructions</h2>
+                        
+                        <div class="mb-4">
+                            <label for="{{ order_form.special_instructions.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Special Instructions
+                            </label>
+                            {{ order_form.special_instructions }}
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-200 pt-4 mt-6">
+                        <h2 class="text-xl font-semibold mb-4">Payment Method</h2>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center mb-3">
+                                <input type="radio" name="payment_method" id="payment-card" value="card" checked class="mr-2">
+                                <label for="payment-card" class="flex items-center">
+                                    <span class="mr-2">Credit/Debit Card</span>
+                                    <i class="fab fa-cc-visa text-blue-700 mr-1"></i>
+                                    <i class="fab fa-cc-mastercard text-red-600 mr-1"></i>
+                                    <i class="fab fa-cc-amex text-blue-500"></i>
+                                </label>
+                            </div>
+                            
+                            <div class="border p-4 rounded-md bg-gray-50">
+                                <p class="text-gray-600 text-sm">
+                                    Payment will be processed securely through Stripe. You will be redirected to complete your payment after placing your order.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" id="place-order-btn" class="w-full mt-6 bg-orange-500 text-white py-3 px-4 rounded-md hover:bg-orange-600 transition duration-300 font-medium">
+                        Place Order
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Address form validation and handling
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('checkout-form');
+        const addressRadios = document.querySelectorAll('input[name="use_existing_address"]');
+        const newAddressForm = document.getElementById('new-address-form');
+        const requiredFields = ['address_line1', 'city', 'state', 'postal_code'];
+        const placeOrderBtn = document.getElementById('place-order-btn');
+        
+        // Function to toggle required attribute on fields
+        function toggleRequiredFields() {
+            const useNewAddress = document.getElementById('new-address') && document.getElementById('new-address').checked;
+            
+            requiredFields.forEach(field => {
+                const input = document.querySelector(`[name="${field}"]`);
+                const errorDiv = document.getElementById(`error-${field}`);
+                
+                if (input) {
+                    if (useNewAddress) {
+                        // For new address, mark fields as required but don't use HTML5 validation
+                        // We'll handle validation manually
+                        input.removeAttribute('required'); 
+                    } else {
+                        // For existing address, remove required
+                        input.removeAttribute('required');
+                        // Clear any errors
+                        if (errorDiv) errorDiv.classList.add('hidden');
+                        input.classList.remove('border-red-500');
+                    }
+                }
+            });
+        }
+        
+        // Initialize on page load
+        toggleRequiredFields();
+        
+        // Toggle address form visibility when radio changes
+        addressRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.id === 'new-address') {
+                    newAddressForm.classList.remove('hidden');
+                } else {
+                    newAddressForm.classList.add('hidden');
+                }
+                toggleRequiredFields();
+            });
+        });
+        
+        // Form submission handler
+        form.addEventListener('submit', function(e) {
+            // Check if using a new address
+            const useNewAddress = document.getElementById('new-address') && document.getElementById('new-address').checked;
+            
+            // Check if any address is selected (either existing or properly filled new address)
+            const existingAddressSelected = document.querySelector('input[name="use_existing_address"]:checked:not(#new-address)');
+            
+            if (useNewAddress) {
+                // Validate required fields for new address
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const input = document.querySelector(`[name="${field}"]`);
+                    const errorDiv = document.getElementById(`error-${field}`);
+                    
+                    if (input && !input.value.trim()) {
+                        isValid = false;
+                        input.classList.add('border-red-500');
+                        if (errorDiv) errorDiv.classList.remove('hidden');
+                    } else if (input) {
+                        input.classList.remove('border-red-500');
+                        if (errorDiv) errorDiv.classList.add('hidden');
+                    }
+                });
+                
+                if (!isValid) {
+                    e.preventDefault();
+                    // Scroll to the first error
+                    const firstError = document.querySelector('.border-red-500');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        firstError.focus();
+                    }
+                    return false;
+                }
+            } else if (!existingAddressSelected && document.querySelectorAll('input[name="use_existing_address"]').length > 0) {
+                // No existing address selected
+                alert('Please select a delivery address.');
+                e.preventDefault();
+                return false;
+            }
+            
+            // If we get here, the form is valid
+            console.log('Form is being submitted');
+            placeOrderBtn.disabled = true;
+            placeOrderBtn.textContent = 'Processing...';
+            return true;
+        });
+    });
+</script>
+{% endblock %}

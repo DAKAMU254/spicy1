@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Menu Management - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <div class="flex justify-between items-center mb-8">
+        <h1 class="text-3xl font-bold">Menu Management</h1>
+        <a href="{% url 'restaurants:add_menu_item' %}" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition duration-200">
+            <i class="fas fa-plus mr-2"></i> Add New Item
+        </a>
+    </div>
+    
+    {% if not categories %}
+        <div class="bg-white rounded-lg shadow-md p-8 text-center">
+            <div class="text-gray-500 mb-4">
+                <i class="fas fa-utensils text-5xl"></i>
+            </div>
+            <h2 class="text-2xl font-semibold mb-4">Your menu is empty</h2>
+            <p class="text-gray-600 mb-6">Start adding delicious items to your menu!</p>
+            <a href="{% url 'restaurants:add_menu_item' %}" class="inline-block bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-600 transition duration-200">
+                Add Your First Item
+            </a>
+        </div>
+    {% else %}
+        <div class="space-y-8">
+            {% for category, items in categories.items %}
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-gray-50 px-6 py-4 border-b">
+                        <h2 class="text-xl font-semibold">{{ category }}</h2>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {% for item in items %}
+                                <div class="border rounded-lg overflow-hidden hover:shadow-md transition duration-200">
+                                    <div class="h-48 overflow-hidden">
+                                        {% if item.image %}
+                                            <img src="{{ item.image.url }}" alt="{{ item.name }}" class="w-full h-full object-cover">
+                                        {% else %}
+                                            <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                                <i class="fas fa-utensils text-gray-400 text-3xl"></i>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                    
+                                    <div class="p-4">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <h3 class="font-semibold">{{ item.name }}</h3>
+                                            <span class="font-semibold">${{ item.price }}</span>
+                                        </div>
+                                        
+                                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">{{ item.description }}</p>
+                                        
+                                        <div class="flex flex-wrap gap-1 mb-4">
+                                            {% if item.is_vegetarian %}
+                                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded">Vegetarian</span>
+                                            {% endif %}
+                                            {% if item.is_vegan %}
+                                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded">Vegan</span>
+                                            {% endif %}
+                                            {% if item.is_gluten_free %}
+                                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded">Gluten-Free</span>
+                                            {% endif %}
+                                            {% if item.spice_level > 0 %}
+                                                <span class="bg-red-100 text-red-800 text-xs px-2 py-0.5 rounded">
+                                                    Spicy 
+                                                    {% for i in "12345" %}
+                                                        {% if forloop.counter <= item.spice_level %}🌶️{% endif %}
+                                                    {% endfor %}
+                                                </span>
+                                            {% endif %}
+                                            {% if not item.is_available %}
+                                                <span class="bg-gray-100 text-gray-800 text-xs px-2 py-0.5 rounded">Not Available</span>
+                                            {% endif %}
+                                        </div>
+                                        
+                                        <div class="flex space-x-2">
+                                            <a href="{% url 'restaurants:edit_menu_item' item.id %}" class="bg-blue-500 text-white text-center py-1 px-3 rounded text-sm hover:bg-blue-600 transition duration-200 flex-1">
+                                                Edit
+                                            </a>
+                                            <a href="{% url 'restaurants:delete_menu_item' item.id %}" class="bg-red-500 text-white text-center py-1 px-3 rounded text-sm hover:bg-red-600 transition duration-200 flex-1">
+                                                Remove
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

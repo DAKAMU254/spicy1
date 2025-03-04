@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Customer Dashboard - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Welcome, {{ request.user.first_name }}!</h1>
+    
+    <!-- Quick Actions -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <a href="{% url 'customers:restaurants' %}" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold">Order Food</h3>
+                <div class="bg-orange-100 text-orange-600 p-2 rounded-full">
+                    <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">Browse restaurants and order your favorite meals</p>
+            <span class="text-orange-500 flex items-center">
+                Browse Restaurants <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+        
+        <a href="{% url 'customers:orders' %}" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold">Your Orders</h3>
+                <div class="bg-blue-100 text-blue-600 p-2 rounded-full">
+                    <i class="fas fa-list-alt"></i>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">View your order history and track active orders</p>
+            <span class="text-orange-500 flex items-center">
+                View Orders <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+        
+        <a href="{% url 'profile' %}" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold">Your Profile</h3>
+                <div class="bg-green-100 text-green-600 p-2 rounded-full">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-4">Manage your profile, addresses, and preferences</p>
+            <span class="text-orange-500 flex items-center">
+                Edit Profile <i class="fas fa-arrow-right ml-2"></i>
+            </span>
+        </a>
+    </div>
+    
+    <!-- Active Orders -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold">Active Orders</h2>
+            <a href="{% url 'customers:orders' %}" class="text-orange-500 hover:underline">View all</a>
+        </div>
+        
+        {% if active_orders %}
+            <div class="space-y-4">
+                {% for order in active_orders %}
+                    <div class="border rounded-lg overflow-hidden">
+                        <div class="bg-gray-50 p-4 border-b">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-semibold">Order #{{ order.id }}</h3>
+                                    <p class="text-sm text-gray-600">{{ order.restaurant.name }}</p>
+                                </div>
+                                <span class="px-2 py-1 rounded-full text-xs 
+                                    {% if order.status == 'pending' %}bg-yellow-100 text-yellow-800
+                                    {% elif order.status == 'confirmed' %}bg-blue-100 text-blue-800
+                                    {% elif order.status == 'preparing' %}bg-purple-100 text-purple-800
+                                    {% elif order.status == 'ready_for_pickup' %}bg-indigo-100 text-indigo-800
+                                    {% elif order.status == 'out_for_delivery' %}bg-orange-100 text-orange-800
+                                    {% endif %}">
+                                    {{ order.get_status_display }}
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-3">
+                                <div class="text-sm text-gray-600">
+                                    <i class="fas fa-calendar-alt mr-1"></i> {{ order.created_at|date:"F j, Y" }}
+                                </div>
+                                <div class="font-medium">${{ order.order_total }}</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-medium text-gray-500 mb-1">Items</h4>
+                                <ul class="list-disc list-inside text-gray-700">
+                                    {% for item in order.items.all|slice:":3" %}
+                                        <li>{{ item.quantity }}x {{ item.menu_item.name }}</li>
+                                    {% endfor %}
+                                    {% if order.items.count > 3 %}
+                                        <li class="text-gray-500">+ {{ order.items.count|add:"-3" }} more items</li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                            
+                            <a href="{% url 'customers:order_detail' order.id %}" class="block w-full py-2 bg-orange-500 text-white text-center rounded hover:bg-orange-600 transition duration-200">
+                                Track Order
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="text-center py-6">
+                <p class="text-gray-600">You don't have any active orders.</p>
+                <a href="{% url 'customers:restaurants' %}" class="inline-block mt-3 text-orange-500 hover:underline">
+                    Order food now <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+    
+    <!-- Featured Restaurants -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold">Popular Restaurants</h2>
+            <a href="{% url 'customers:restaurants' %}" class="text-orange-500 hover:underline">View all</a>
+        </div>
+        
+        {% if favorite_restaurants %}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {% for restaurant in favorite_restaurants %}
+                    <a href="{% url 'customers:restaurant_detail' restaurant.id %}" class="block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition duration-200">
+                        <div class="h-36 overflow-hidden">
+                            {% if restaurant.banner_image %}
+                                <img src="{{ restaurant.banner_image.url }}" alt="{{ restaurant.name }}" class="w-full h-full object-cover">
+                            {% else %}
+                                <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                    <i class="fas fa-utensils text-gray-400 text-3xl"></i>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="p-3">
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-medium">{{ restaurant.name }}</h3>
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400 text-xs mr-1"></i>
+                                    <span class="text-xs">{{ restaurant.average_rating }}</span>
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-600">{{ restaurant.cuisine_type }}</p>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="text-center py-6">
+                <p class="text-gray-600">Start exploring restaurants!</p>
+                <a href="{% url 'customers:restaurants' %}" class="inline-block mt-3 text-orange-500 hover:underline">
+                    Browse restaurants <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

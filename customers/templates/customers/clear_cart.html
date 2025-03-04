@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-lg p-5 text-center border-danger">
+        <h2 class="text-danger fw-bold">Clear Cart</h2>
+        <p class="mt-3 text-muted">Are you sure you want to clear your cart? This action cannot be undone.</p>
+        
+        <form method="post">
+            {% csrf_token %}
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button type="submit" class="btn btn-danger px-4 py-2 fw-bold">Yes, Clear Cart</button>
+                <a href="{% url 'customers:cart' %}" class="btn btn-secondary px-4 py-2 fw-bold">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

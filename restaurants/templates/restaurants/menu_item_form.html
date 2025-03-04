@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ action }} Menu Item - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md my-8">
+    <div class="flex items-center mb-6">
+        <a href="{% url 'restaurants:menu' %}" class="text-orange-500 hover:text-orange-700">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Menu
+        </a>
+    </div>
+    
+    <h1 class="text-2xl font-bold mb-6">{{ action }} Menu Item</h1>
+    
+    <form method="post" enctype="multipart/form-data" class="space-y-6">
+        {% csrf_token %}
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <label for="{{ form.name.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                    {{ form.name.label }} *
+                </label>
+                {{ form.name }}
+                {% if form.name.errors %}
+                    <div class="text-red-500 text-sm mt-1">
+                        {% for error in form.name.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div>
+                <label for="{{ form.category.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                    {{ form.category.label }} *
+                </label>
+                {{ form.category }}
+                {% if form.category.errors %}
+                    <div class="text-red-500 text-sm mt-1">
+                        {% for error in form.category.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div>
+                <label for="{{ form.price.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                    {{ form.price.label }} *
+                </label>
+                {{ form.price }}
+                {% if form.price.errors %}
+                    <div class="text-red-500 text-sm mt-1">
+                        {% for error in form.price.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div>
+                <label for="{{ form.preparation_time.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                    {{ form.preparation_time.label }} (minutes) *
+                </label>
+                {{ form.preparation_time }}
+                {% if form.preparation_time.errors %}
+                    <div class="text-red-500 text-sm mt-1">
+                        {% for error in form.preparation_time.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div>
+            <label for="{{ form.description.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                {{ form.description.label }} *
+            </label>
+            {{ form.description }}
+            {% if form.description.errors %}
+                <div class="text-red-500 text-sm mt-1">
+                    {% for error in form.description.errors %}
+                        {{ error }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+        <div>
+            <label for="{{ form.image.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                {{ form.image.label }}
+            </label>
+            {% if menu_item and menu_item.image %}
+                <div class="mb-2">
+                    <img src="{{ menu_item.image.url }}" alt="{{ menu_item.name }}" class="w-32 h-32 object-cover rounded">
+                </div>
+            {% endif %}
+            {{ form.image }}
+            {% if form.image.errors %}
+                <div class="text-red-500 text-sm mt-1">
+                    {% for error in form.image.errors %}
+                        {{ error }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        
+        <div class="border-t border-gray-200 pt-4">
+            <h2 class="font-medium mb-4">Dietary Options</h2>
+            
+            <div class="flex flex-wrap gap-6">
+                <div class="flex items-center">
+                    {{ form.is_vegetarian }}
+                    <label for="{{ form.is_vegetarian.id_for_label }}" class="ml-2 block text-gray-700">
+                        {{ form.is_vegetarian.label }}
+                    </label>
+                </div>
+                
+                <div class="flex items-center">
+                    {{ form.is_vegan }}
+                    <label for="{{ form.is_vegan.id_for_label }}" class="ml-2 block text-gray-700">
+                        {{ form.is_vegan.label }}
+                    </label>
+                </div>
+                
+                <div class="flex items-center">
+                    {{ form.is_gluten_free }}
+                    <label for="{{ form.is_gluten_free.id_for_label }}" class="ml-2 block text-gray-700">
+                        {{ form.is_gluten_free.label }}
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-200 pt-4">
+            <h2 class="font-medium mb-4">Additional Details</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label for="{{ form.spice_level.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                        {{ form.spice_level.label }} (0-5)
+                    </label>
+                    {{ form.spice_level }}
+                    {% if form.spice_level.errors %}
+                        <div class="text-red-500 text-sm mt-1">
+                            {% for error in form.spice_level.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                
+                <div>
+                    <div class="flex items-center h-full">
+                        {{ form.is_available }}
+                        <label for="{{ form.is_available.id_for_label }}" class="ml-2 block text-gray-700">
+                            {{ form.is_available.label }}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-between pt-4">
+            <a href="{% url 'restaurants:menu' %}" class="bg-gray-300 text-gray-800 py-2 px-4 rounded hover:bg-gray-400 transition duration-200">
+                Cancel
+            </a>
+            
+            <button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded hover:bg-orange-600 transition duration-200">
+                {% if action == 'Add' %}Add Item{% else %}Update Item{% endif %}
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

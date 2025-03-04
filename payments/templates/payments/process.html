@@ -1,0 +1,341 @@
+{% extends 'base.html' %}
+
+{% block title %}Payment - FoodRunner{% endblock %}
+
+{% block extra_css %}
+<script src="https://js.stripe.com/v3/"></script>
+<style>
+  .StripeElement {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+  }
+  .StripeElement--focus {
+    box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  .card-element-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .payment-status-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  .payment-step {
+    position: relative;
+    padding-left: 2rem;
+  }
+  .payment-step::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #E2E8F0;
+  }
+  .payment-step.active::before {
+    background-color: #F97316;
+  }
+  .payment-step-marker {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #E2E8F0;
+    border: 2px solid white;
+  }
+  .payment-step.active .payment-step-marker {
+    background-color: #F97316;
+  }
+  .payment-step.completed .payment-step-marker {
+    background-color: #10B981;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .pulse-animation {
+    animation: pulse 2s infinite;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto my-8 px-4">
+  <div class="flex items-center mb-8">
+    <a href="javascript:history.back()" class="text-gray-500 hover:text-orange-500 transition duration-300 mr-3">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+    <h1 class="text-3xl font-bold">Complete Your Payment</h1>
+  </div>
+  
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Order Summary (Right Side) -->
+    <div class="lg:col-span-1 lg:order-2">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden sticky top-6">
+        <div class="bg-gradient-to-r from-orange-500 to-orange-400 py-4 px-6 text-white">
+          <h2 class="text-xl font-semibold">Order Summary</h2>
+          <p class="text-sm opacity-90">Order #{{ order.id }}</p>
+        </div>
+        
+        <div class="p-6">
+          <div class="space-y-3 mb-4">
+            <div class="flex justify-between text-gray-600">
+              <span>Subtotal</span>
+              <span>${{ order.total_amount }}</span>
+            </div>
+            
+            <div class="flex justify-between text-gray-600">
+              <span>Delivery Fee</span>
+              <span>${{ order.delivery_fee }}</span>
+            </div>
+            
+            <div class="flex justify-between text-gray-600">
+              <span>Tax</span>
+              <span>${{ order.tax_amount }}</span>
+            </div>
+          </div>
+          
+          <div class="flex justify-between font-bold text-lg pt-3 border-t border-gray-100">
+            <span>Total</span>
+            <span class="text-orange-500">${{ total_amount }}</span>
+          </div>
+          
+          <div class="mt-6 bg-blue-50 rounded-lg p-4 text-sm">
+            <div class="flex items-start">
+              <div class="text-blue-500 mr-3">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <p class="font-medium text-blue-800">Secure Payment</p>
+                <p class="text-blue-600">Your payment information is processed securely through Stripe</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment Form (Left Side) -->
+    <div class="lg:col-span-2 lg:order-1">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+          <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-6 flex items-center">
+              <span class="bg-orange-100 text-orange-500 w-8 h-8 rounded-full flex items-center justify-center mr-3">
+                <i class="fas fa-credit-card"></i>
+              </span>
+              Payment Details
+            </h2>
+            
+            <div class="flex space-x-2 mb-6">
+              <div class="payment-step active">
+                <div class="payment-step-marker"></div>
+                <div class="mb-1 font-medium">Enter Payment</div>
+                <div class="text-gray-500 text-sm">Complete payment details</div>
+              </div>
+              <div class="payment-step">
+                <div class="payment-step-marker"></div>
+                <div class="mb-1 font-medium">Processing</div>
+                <div class="text-gray-500 text-sm">Verifying payment</div>
+              </div>
+              <div class="payment-step">
+                <div class="payment-step-marker"></div>
+                <div class="mb-1 font-medium">Confirmation</div>
+                <div class="text-gray-500 text-sm">Order confirmed</div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="payment-summary" class="hidden bg-gray-50 rounded-xl p-5 mb-6">
+            <div class="flex items-center mb-3">
+              <div class="mr-4 bg-orange-100 rounded-full p-2">
+                <i class="fas fa-utensils text-orange-500"></i>
+              </div>
+              <div>
+                <div class="font-medium">Order Total: ${{ total_amount }}</div>
+                <div class="text-sm text-gray-500">From {{ order.restaurant.name }}</div>
+              </div>
+            </div>
+          </div>
+          
+          <form id="payment-form" class="space-y-5">
+            <div id="payment-element" class="card-element-container">
+              <!-- Stripe Elements will go here -->
+            </div>
+            
+            <div id="error-message" class="hidden text-red-500 text-sm bg-red-50 p-3 rounded-lg border border-red-100"></div>
+            
+            <button id="submit-button" type="submit" class="w-full bg-orange-500 text-white py-4 px-6 rounded-lg hover:bg-orange-600 transition duration-300 font-bold shadow-md hover:shadow-lg transform hover:-translate-y-1">
+              Pay ${{ total_amount }}
+            </button>
+          </form>
+          
+          <div id="processing-payment" class="hidden space-y-4 py-8 text-center">
+            <div class="payment-status-icon bg-blue-100 text-blue-500 pulse-animation">
+              <i class="fas fa-spinner fa-spin text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium">Processing Your Payment</h3>
+              <p class="text-gray-600">Please wait while we confirm your payment...</p>
+            </div>
+            <div class="animate-pulse rounded-xl bg-gray-200 h-4 w-full max-w-md mx-auto"></div>
+          </div>
+          
+          <div id="payment-success" class="hidden space-y-4 py-8 text-center">
+            <div class="payment-status-icon bg-green-100 text-green-500">
+              <i class="fas fa-check-circle text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium">Payment Successful!</h3>
+              <p class="text-gray-600">Your order has been confirmed.</p>
+            </div>
+          </div>
+          
+          <div id="payment-error" class="hidden space-y-4 py-8 text-center">
+            <div class="payment-status-icon bg-red-100 text-red-500">
+              <i class="fas fa-exclamation-circle text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium">Payment Failed</h3>
+              <p id="error-message-detailed" class="text-gray-600">There was an issue processing your payment.</p>
+              <button id="retry-button" class="mt-4 bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600 transition duration-300 font-medium">
+                Try Again
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-4 text-center">
+        <a href="{% url 'payments:cancel' order_id=order.id %}" class="text-orange-500 hover:text-orange-600 hover:underline transition duration-300 font-medium">
+          Cancel Order
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Stripe
+    const stripe = Stripe('{{ stripe_public_key }}');
+    const clientSecret = '{{ client_secret }}';
+    
+    // Show payment summary
+    document.getElementById('payment-summary').classList.remove('hidden');
+    
+    // Create payment element
+    const elements = stripe.elements({
+      clientSecret: clientSecret,
+      appearance: {
+        theme: 'stripe',
+        variables: {
+          colorPrimary: '#f97316',
+          colorBackground: '#ffffff',
+          colorText: '#1f2937',
+          colorDanger: '#ef4444',
+          fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+          spacingUnit: '4px',
+          borderRadius: '8px',
+        },
+      },
+    });
+    
+    const paymentElement = elements.create('payment', {
+      layout: {
+        type: 'tabs',
+        defaultCollapsed: false,
+      }
+    });
+    paymentElement.mount('#payment-element');
+    
+    // Handle form submission
+    const form = document.getElementById('payment-form');
+    const submitButton = document.getElementById('submit-button');
+    const processingPayment = document.getElementById('processing-payment');
+    const errorMessage = document.getElementById('error-message');
+    const errorMessageDetailed = document.getElementById('error-message-detailed');
+    const paymentSuccess = document.getElementById('payment-success');
+    const paymentError = document.getElementById('payment-error');
+    const retryButton = document.getElementById('retry-button');
+    
+    // Update steps when form is submitted
+    function updateSteps(step) {
+      const steps = document.querySelectorAll('.payment-step');
+      steps.forEach((s, index) => {
+        if (index < step) {
+          s.classList.add('completed');
+          s.classList.remove('active');
+        } else if (index === step) {
+          s.classList.add('active');
+          s.classList.remove('completed');
+        } else {
+          s.classList.remove('active', 'completed');
+        }
+      });
+    }
+    
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      
+      // Disable form & show loading state
+      submitButton.disabled = true;
+      form.classList.add('hidden');
+      processingPayment.classList.remove('hidden');
+      updateSteps(1);
+      
+      try {
+        const {error} = await stripe.confirmPayment({
+          elements,
+          confirmParams: {
+            return_url: window.location.origin + "{% url 'payments:complete' order_id=order.id %}",
+          },
+        });
+        
+        if (error) {
+          // Show error message
+          errorMessageDetailed.textContent = error.message;
+          processingPayment.classList.add('hidden');
+          paymentError.classList.remove('hidden');
+          updateSteps(0);
+        }
+      } catch (e) {
+        // Handle unexpected errors
+        errorMessageDetailed.textContent = "An unexpected error occurred. Please try again.";
+        processingPayment.classList.add('hidden');
+        paymentError.classList.remove('hidden');
+        updateSteps(0);
+      }
+    });
+    
+    // Retry button handler
+    retryButton.addEventListener('click', function() {
+      paymentError.classList.add('hidden');
+      form.classList.remove('hidden');
+      submitButton.disabled = false;
+      updateSteps(0);
+    });
+    
+    // Check URL for payment status (this would handle the return from Stripe)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('payment_status') === 'success') {
+      form.classList.add('hidden');
+      paymentSuccess.classList.remove('hidden');
+      updateSteps(2);
+    }
+  });
+</script>
+{% endblock %}
+{% endblock %}

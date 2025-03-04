@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Order Management - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Order Management</h1>
+    
+    <!-- Status Filter -->
+    <div class="bg-white rounded-lg shadow-md p-4 mb-8">
+        <div class="flex flex-wrap gap-2">
+            <a href="{% url 'restaurants:orders' %}" class="px-4 py-2 rounded-md {% if not status_filter %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                All
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=pending" class="px-4 py-2 rounded-md {% if status_filter == 'pending' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Pending
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=confirmed" class="px-4 py-2 rounded-md {% if status_filter == 'confirmed' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Confirmed
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=preparing" class="px-4 py-2 rounded-md {% if status_filter == 'preparing' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Preparing
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=ready_for_pickup" class="px-4 py-2 rounded-md {% if status_filter == 'ready_for_pickup' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Ready for Pickup
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=out_for_delivery" class="px-4 py-2 rounded-md {% if status_filter == 'out_for_delivery' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Out for Delivery
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=delivered" class="px-4 py-2 rounded-md {% if status_filter == 'delivered' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Delivered
+            </a>
+            <a href="{% url 'restaurants:orders' %}?status=cancelled" class="px-4 py-2 rounded-md {% if status_filter == 'cancelled' %}bg-orange-500 text-white{% else %}bg-gray-100 text-gray-700 hover:bg-gray-200{% endif %} transition duration-200">
+                Cancelled
+            </a>
+        </div>
+    </div>
+    
+    <!-- Orders by Status -->
+    {% if not status_filter or status_filter == 'pending' %}
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Pending Orders</h2>
+            
+            {% if order_groups.pending %}
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50 border-b">
+                                <tr>
+                                    <th class="text-left py-3 px-4">Order #</th>
+                                    <th class="text-left py-3 px-4">Customer</th>
+                                    <th class="text-left py-3 px-4">Time</th>
+                                    <th class="text-left py-3 px-4">Items</th>
+                                    <th class="text-left py-3 px-4">Total</th>
+                                    <th class="text-left py-3 px-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for order in order_groups.pending %}
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4"><a href="{% url 'restaurants:order_detail' order.id %}" class="text-orange-500 hover:underline">#{{ order.id }}</a></td>
+                                        <td class="py-3 px-4">{{ order.customer.first_name }} {{ order.customer.last_name }}</td>
+                                        <td class="py-3 px-4">{{ order.created_at|time:"g:i A" }}</td>
+                                        <td class="py-3 px-4">{{ order.items.count }}</td>
+                                        <td class="py-3 px-4">${{ order.order_total }}</td>
+                                        <td class="py-3 px-4">
+                                            <div class="flex space-x-2">
+                                                <form method="post" action="{% url 'restaurants:update_order_status' order.id %}">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="status" value="confirmed">
+                                                    <button type="submit" class="bg-green-500 text-white px-3 py-1 rounded-md text-sm hover:bg-green-600 transition duration-200">
+                                                        Confirm
+                                                    </button>
+                                                </form>
+                                                
+                                                <form method="post" action="{% url 'restaurants:update_order_status' order.id %}">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="status" value="cancelled">
+                                                    <button type="submit" class="bg-red-500 text-white px-3 py-1 rounded-md text-sm hover:bg-red-600 transition duration-200">
+                                                        Cancel
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            {% else %}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <p class="text-gray-600">No pending orders.</p>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+    
+    {% if not status_filter or status_filter == 'confirmed' %}
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Confirmed Orders</h2>
+            
+            {% if order_groups.confirmed %}
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50 border-b">
+                                <tr>
+                                    <th class="text-left py-3 px-4">Order #</th>
+                                    <th class="text-left py-3 px-4">Customer</th>
+                                    <th class="text-left py-3 px-4">Time</th>
+                                    <th class="text-left py-3 px-4">Items</th>
+                                    <th class="text-left py-3 px-4">Total</th>
+                                    <th class="text-left py-3 px-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for order in order_groups.confirmed %}
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4"><a href="{% url 'restaurants:order_detail' order.id %}" class="text-orange-500 hover:underline">#{{ order.id }}</a></td>
+                                        <td class="py-3 px-4">{{ order.customer.first_name }} {{ order.customer.last_name }}</td>
+                                        <td class="py-3 px-4">{{ order.created_at|time:"g:i A" }}</td>
+                                        <td class="py-3 px-4">{{ order.items.count }}</td>
+                                        <td class="py-3 px-4">${{ order.order_total }}</td>
+                                        <td class="py-3 px-4">
+                                            <form method="post" action="{% url 'restaurants:update_order_status' order.id %}">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="status" value="preparing">
+                                                <button type="submit" class="bg-purple-500 text-white px-3 py-1 rounded-md text-sm hover:bg-purple-600 transition duration-200">
+                                                    Start Preparing
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            {% else %}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <p class="text-gray-600">No confirmed orders.</p>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+    
+    <!-- Similar blocks for preparing, ready_for_pickup, out_for_delivery, etc. -->
+    
+    {% if not status_filter or status_filter == 'preparing' %}
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Preparing</h2>
+            
+            {% if order_groups.preparing %}
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <!-- Similar table structure -->
+                            <thead class="bg-gray-50 border-b">
+                                <tr>
+                                    <th class="text-left py-3 px-4">Order #</th>
+                                    <th class="text-left py-3 px-4">Customer</th>
+                                    <th class="text-left py-3 px-4">Time</th>
+                                    <th class="text-left py-3 px-4">Items</th>
+                                    <th class="text-left py-3 px-4">Total</th>
+                                    <th class="text-left py-3 px-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for order in order_groups.preparing %}
+                                    <tr class="border-b hover:bg-gray-50">
+                                        <td class="py-3 px-4"><a href="{% url 'restaurants:order_detail' order.id %}" class="text-orange-500 hover:underline">#{{ order.id }}</a></td>
+                                        <td class="py-3 px-4">{{ order.customer.first_name }} {{ order.customer.last_name }}</td>
+                                        <td class="py-3 px-4">{{ order.created_at|time:"g:i A" }}</td>
+                                        <td class="py-3 px-4">{{ order.items.count }}</td>
+                                        <td class="py-3 px-4">${{ order.order_total }}</td>
+                                        <td class="py-3 px-4">
+                                            <form method="post" action="{% url 'restaurants:update_order_status' order.id %}">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="status" value="ready_for_pickup">
+                                                <button type="submit" class="bg-indigo-500 text-white px-3 py-1 rounded-md text-sm hover:bg-indigo-600 transition duration-200">
+                                                    Ready for Pickup
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            {% else %}
+                <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                    <p class="text-gray-600">No orders being prepared.</p>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

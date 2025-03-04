@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Add to Cart - {{ menu_item.name }}{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md my-8">
+    <div class="flex items-center mb-6">
+        <a href="{% url 'customers:restaurant_detail' menu_item.restaurant.id %}" class="text-orange-500 hover:text-orange-700">
+            <i class="fas fa-arrow-left mr-2"></i> Back to Menu
+        </a>
+    </div>
+    
+    <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/3 mb-4 md:mb-0">
+            {% if menu_item.image %}
+                <img src="{{ menu_item.image.url }}" alt="{{ menu_item.name }}" class="w-full h-auto rounded-lg">
+            {% else %}
+                <div class="bg-gray-200 w-full h-48 rounded-lg flex items-center justify-center">
+                    <span class="text-gray-500">No image available</span>
+                </div>
+            {% endif %}
+        </div>
+        
+        <div class="md:w-2/3 md:pl-6">
+            <h1 class="text-2xl font-bold mb-2">{{ menu_item.name }}</h1>
+            <p class="text-gray-600 mb-4">{{ menu_item.description }}</p>
+            
+            <div class="mb-4">
+                <span class="text-xl font-bold text-orange-500">${{ menu_item.price }}</span>
+            </div>
+            
+            <div class="flex flex-wrap mb-4">
+                {% if menu_item.is_vegetarian %}
+                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Vegetarian</span>
+                {% endif %}
+                {% if menu_item.is_vegan %}
+                    <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Vegan</span>
+                {% endif %}
+                {% if menu_item.is_gluten_free %}
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">Gluten Free</span>
+                {% endif %}
+                {% if menu_item.spice_level > 0 %}
+                    <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">
+                        Spice Level: {{ menu_item.spice_level }}/5
+                    </span>
+                {% endif %}
+            </div>
+            
+            <form method="post" class="mt-6">
+                {% csrf_token %}
+                
+                <div class="mb-4">
+                    <label for="{{ form.quantity.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                        Quantity
+                    </label>
+                    {{ form.quantity }}
+                </div>
+                
+                <div class="mb-6">
+                    <label for="{{ form.special_instructions.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                        Special Instructions
+                    </label>
+                    {{ form.special_instructions }}
+                </div>
+                
+                <button type="submit" class="w-full bg-orange-500 text-white py-3 px-4 rounded-md hover:bg-orange-600 transition duration-300 font-medium">
+                    Add to Cart
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

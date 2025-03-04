@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Delivery Profile - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Your Delivery Profile</h1>
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <form method="post" class="p-6">
+            {% csrf_token %}
+            
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">Vehicle Information</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="{{ form.vehicle_type.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Vehicle Type *
+                            </label>
+                            {{ form.vehicle_type }}
+                            {% if form.vehicle_type.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.vehicle_type.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.vehicle_number.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                                Vehicle Number
+                            </label>
+                            {{ form.vehicle_number }}
+                            {% if form.vehicle_number.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.vehicle_number.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-lg font-semibold mb-4">License Information</h2>
+                    
+                    <div>
+                        <label for="{{ form.license_number.id_for_label }}" class="block text-gray-700 font-medium mb-2">
+                            License Number *
+                        </label>
+                        {{ form.license_number }}
+                        {% if form.license_number.errors %}
+                            <div class="text-red-500 text-sm mt-1">
+                                {% for error in form.license_number.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <div class="border-t pt-6">
+                    <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition duration-200">
+                        Save Profile
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

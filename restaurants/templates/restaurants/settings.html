@@ -1,0 +1,328 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Restaurant Settings - FoodRunner{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-8">Restaurant Settings</h1>
+    
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <form method="post" enctype="multipart/form-data" class="p-6">
+            {% csrf_token %}
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Restaurant Details</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="{{ form.name.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Restaurant Name *
+                            </label>
+                            {{ form.name }}
+                            {% if form.name.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.name.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.cuisine_type.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Cuisine Type *
+                            </label>
+                            {{ form.cuisine_type }}
+                            {% if form.cuisine_type.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.cuisine_type.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.description.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Description *
+                            </label>
+                            {{ form.description }}
+                            {% if form.description.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.description.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Images</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label for="{{ form.logo.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Restaurant Logo *
+                            </label>
+                            {% if restaurant.logo %}
+                                <div class="mb-2">
+                                    <img src="{{ restaurant.logo.url }}" alt="{{ restaurant.name }} Logo" class="w-32 h-32 object-cover rounded-lg">
+                                </div>
+                            {% endif %}
+                            {{ form.logo }}
+                            {% if form.logo.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.logo.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.banner_image.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Banner Image
+                            </label>
+                            {% if restaurant.banner_image %}
+                                <div class="mb-2">
+                                    <img src="{{ restaurant.banner_image.url }}" alt="{{ restaurant.name }} Banner" class="w-full h-32 object-cover rounded-lg">
+                                </div>
+                            {% endif %}
+                            {{ form.banner_image }}
+                            {% if form.banner_image.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.banner_image.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Contact Information</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="{{ form.phone.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Phone Number *
+                            </label>
+                            {{ form.phone }}
+                            {% if form.phone.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.phone.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.email.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Email *
+                            </label>
+                            {{ form.email }}
+                            {% if form.email.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.email.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.website.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Website
+                            </label>
+                            {{ form.website }}
+                            {% if form.website.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.website.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Restaurant Hours</h2>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="{{ form.opening_time.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Opening Time *
+                            </label>
+                            {{ form.opening_time }}
+                            {% if form.opening_time.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.opening_time.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.closing_time.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Closing Time *
+                            </label>
+                            {{ form.closing_time }}
+                            {% if form.closing_time.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.closing_time.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Delivery Settings</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="{{ form.delivery_fee.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Delivery Fee ($) *
+                            </label>
+                            {{ form.delivery_fee }}
+                            {% if form.delivery_fee.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.delivery_fee.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.min_order_amount.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Minimum Order Amount ($) *
+                            </label>
+                            {{ form.min_order_amount }}
+                            {% if form.min_order_amount.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.min_order_amount.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.preparation_time.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Average Preparation Time (minutes) *
+                            </label>
+                            {{ form.preparation_time }}
+                            {% if form.preparation_time.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.preparation_time.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-semibold mb-4">Restaurant Address</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label for="{{ form.address_line1.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Address Line 1 *
+                            </label>
+                            {{ form.address_line1 }}
+                            {% if form.address_line1.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.address_line1.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div>
+                            <label for="{{ form.address_line2.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                Address Line 2
+                            </label>
+                            {{ form.address_line2 }}
+                            {% if form.address_line2.errors %}
+                                <div class="text-red-500 text-sm mt-1">
+                                    {% for error in form.address_line2.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <label for="{{ form.city.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                    City *
+                                </label>
+                                {{ form.city }}
+                                {% if form.city.errors %}
+                                    <div class="text-red-500 text-sm mt-1">
+                                        {% for error in form.city.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            
+                            <div>
+                                <label for="{{ form.state.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                    State *
+                                </label>
+                                {{ form.state }}
+                                {% if form.state.errors %}
+                                    <div class="text-red-500 text-sm mt-1">
+                                        {% for error in form.state.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            
+                            <div>
+                                <label for="{{ form.postal_code.id_for_label }}" class="block text-gray-700 font-medium mb-1">
+                                    Postal Code *
+                                </label>
+                                {{ form.postal_code }}
+                                {% if form.postal_code.errors %}
+                                    <div class="text-red-500 text-sm mt-1">
+                                        {% for error in form.postal_code.errors %}
+                                            {{ error }}
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-6 flex justify-end">
+                <button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded hover:bg-orange-600 transition duration-200">
+                    Save Settings
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
