@@ -190,3 +190,811 @@ WARNING 2025-03-04 17:11:56,419 basehttp 30008 25460 "GET /static/images/custome
 WARNING 2025-03-04 17:11:56,426 basehttp 30008 3936 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
 WARNING 2025-03-04 17:11:56,441 basehttp 30008 13072 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
 WARNING 2025-03-04 17:11:56,450 basehttp 30008 4804 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-04 20:18:20,887 autoreload 20772 21676 Watching for file changes with StatReloader
+INFO 2025-03-04 20:18:34,083 basehttp 20772 16808 "GET / HTTP/1.1" 200 17583
+WARNING 2025-03-04 20:18:34,213 basehttp 20772 228 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,214 basehttp 20772 20348 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-03-04 20:18:34,468 basehttp 20772 22016 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-03-04 20:18:34,476 basehttp 20772 16808 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-03-04 20:18:34,481 basehttp 20772 13500 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-03-04 20:18:34,481 basehttp 20772 18940 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-03-04 20:18:34,493 basehttp 20772 21800 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-03-04 20:18:34,496 basehttp 20772 12992 "GET /static/js/main.js HTTP/1.1" 200 934
+WARNING 2025-03-04 20:18:34,601 basehttp 20772 13500 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,604 basehttp 20772 22016 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,608 basehttp 20772 18940 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,840 basehttp 20772 12992 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,841 basehttp 20772 21800 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-04 20:18:34,843 basehttp 20772 21468 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,843 basehttp 20772 16808 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-04 20:18:34,846 basehttp 20772 19552 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-04 20:18:35,102 basehttp 20772 21712 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-03-04 20:18:35,251 log 20772 19808 Not Found: /favicon.ico
+WARNING 2025-03-04 20:18:35,252 basehttp 20772 19808 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-03-05 17:15:07,884 autoreload 4580 1284 Watching for file changes with StatReloader
+INFO 2025-03-05 17:15:13,563 basehttp 4580 14492 "GET / HTTP/1.1" 200 17583
+WARNING 2025-03-05 17:15:13,829 basehttp 4580 15080 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:13,835 basehttp 4580 17736 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-03-05 17:15:14,165 basehttp 4580 6648 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-03-05 17:15:14,174 basehttp 4580 14776 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-03-05 17:15:14,189 basehttp 4580 14492 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-03-05 17:15:14,259 basehttp 4580 13728 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-03-05 17:15:14,262 basehttp 4580 17716 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-03-05 17:15:14,264 basehttp 4580 21128 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+WARNING 2025-03-05 17:15:14,406 basehttp 4580 6648 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,406 basehttp 4580 21128 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,406 basehttp 4580 14776 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,648 basehttp 4580 13728 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,651 basehttp 4580 17716 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-05 17:15:14,654 basehttp 4580 14492 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,654 basehttp 4580 20140 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:15:14,657 basehttp 4580 21776 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:15:14,922 basehttp 4580 6860 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-03-05 17:15:15,130 log 4580 13436 Not Found: /favicon.ico
+WARNING 2025-03-05 17:15:15,132 basehttp 4580 13436 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-03-05 17:15:24,745 basehttp 4580 13436 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-03-05 17:15:40,075 basehttp 4580 13436 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:15:40,196 basehttp 4580 13436 "GET /customer/dashboard/ HTTP/1.1" 200 22513
+INFO 2025-03-05 17:15:46,623 basehttp 4580 13436 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-03-05 17:15:46,690 basehttp 4580 9516 "GET /media/menu_items/WIN_20241104_21_52_22_Pro.jpg HTTP/1.1" 200 127310
+INFO 2025-03-05 17:15:46,702 basehttp 4580 13436 "GET /media/restaurant_logos/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-03-05 17:15:50,751 basehttp 4580 9516 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-03-05 17:15:54,457 basehttp 4580 9516 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:15:54,490 basehttp 4580 9516 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-03-05 17:15:58,713 basehttp 4580 9516 "GET /customer/cart/ HTTP/1.1" 200 16425
+INFO 2025-03-05 17:16:02,694 basehttp 4580 9516 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-03-05 17:16:18,759 util 4580 9516 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-03-05 17:16:20,428 util 4580 9516 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-03-05 17:16:20,452 basehttp 4580 9516 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:16:20,467 util 4580 9516 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIk2C1G57gfc4s0itIHeaY
+INFO 2025-03-05 17:16:20,856 util 4580 9516 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIk2C1G57gfc4s0itIHeaY response_code=200
+ERROR 2025-03-05 17:16:20,954 log 4580 9516 Internal Server Error: /payments/process/10/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:16:21,007 basehttp 4580 9516 "GET /payments/process/10/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:16:35,790 util 4580 9516 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIk2C1G57gfc4s0itIHeaY
+INFO 2025-03-05 17:16:36,210 util 4580 9516 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIk2C1G57gfc4s0itIHeaY response_code=200
+ERROR 2025-03-05 17:16:36,281 log 4580 9516 Internal Server Error: /payments/process/10/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:16:36,319 basehttp 4580 9516 "GET /payments/process/10/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:23:46,667 basehttp 4580 5044 "GET / HTTP/1.1" 200 19311
+WARNING 2025-03-05 17:23:46,957 basehttp 4580 5044 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-05 17:23:46,971 basehttp 4580 16936 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:23:46,982 basehttp 4580 6620 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:23:46,986 basehttp 4580 14440 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:23:46,995 basehttp 4580 16744 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:24:06,909 basehttp 4580 15808 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-03-05 17:24:07,003 basehttp 4580 19708 "GET /media/restaurant_logos/istockphoto-944478708-612x612.jpg HTTP/1.1" 200 49815
+INFO 2025-03-05 17:24:07,019 basehttp 4580 15808 "GET /media/restaurant_logos/a_4Z6emzZ.webp HTTP/1.1" 200 16758
+INFO 2025-03-05 17:24:11,556 basehttp 4580 19708 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-03-05 17:24:14,697 basehttp 4580 19708 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-03-05 17:24:20,630 basehttp 4580 19708 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:24:20,695 basehttp 4580 19708 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-03-05 17:24:22,942 basehttp 4580 19708 "GET /customer/cart/ HTTP/1.1" 200 16425
+INFO 2025-03-05 17:24:27,050 basehttp 4580 19708 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-03-05 17:24:35,489 util 4580 19708 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-03-05 17:24:37,061 util 4580 19708 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-03-05 17:24:37,101 basehttp 4580 19708 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:24:37,133 util 4580 19708 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5
+INFO 2025-03-05 17:24:37,480 util 4580 19708 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5 response_code=200
+ERROR 2025-03-05 17:24:37,593 log 4580 19708 Internal Server Error: /payments/process/11/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:24:37,643 basehttp 4580 19708 "GET /payments/process/11/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:26:54,065 util 4580 12144 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5
+INFO 2025-03-05 17:26:55,234 util 4580 12144 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5 response_code=200
+ERROR 2025-03-05 17:26:55,314 log 4580 12144 Internal Server Error: /payments/process/11/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:26:55,566 basehttp 4580 12144 "GET /payments/process/11/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:26:58,647 util 4580 12144 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5
+INFO 2025-03-05 17:26:59,014 util 4580 12144 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5 response_code=200
+ERROR 2025-03-05 17:26:59,416 log 4580 12144 Internal Server Error: /payments/process/11/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:26:59,932 basehttp 4580 12144 "GET /payments/process/11/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:33:08,856 util 4580 3220 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5
+INFO 2025-03-05 17:33:10,027 util 4580 3220 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzIs3C1G57gfc4s1EFcRbh5 response_code=200
+ERROR 2025-03-05 17:33:10,124 log 4580 3220 Internal Server Error: /payments/process/11/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:33:10,176 basehttp 4580 3220 "GET /payments/process/11/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:35:03,861 basehttp 4580 3220 "GET / HTTP/1.1" 200 19311
+INFO 2025-03-05 17:35:03,994 basehttp 4580 3220 - Broken pipe from ('127.0.0.1', 62742)
+INFO 2025-03-05 17:35:04,008 basehttp 4580 20892 - Broken pipe from ('127.0.0.1', 65290)
+WARNING 2025-03-05 17:35:04,065 basehttp 4580 1280 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-05 17:35:04,068 basehttp 4580 16136 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:35:04,070 basehttp 4580 20384 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:35:04,072 basehttp 4580 19584 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:35:04,075 basehttp 4580 20248 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:35:04,335 basehttp 4580 14180 - Broken pipe from ('127.0.0.1', 65296)
+WARNING 2025-03-05 17:35:04,382 log 4580 6336 Not Found: /favicon.ico
+INFO 2025-03-05 17:35:04,382 basehttp 4580 6336 - Broken pipe from ('127.0.0.1', 65303)
+INFO 2025-03-05 17:35:08,297 basehttp 4580 11172 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-03-05 17:35:11,812 basehttp 4580 11172 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-03-05 17:35:12,974 basehttp 4580 11172 - Broken pipe from ('127.0.0.1', 65358)
+INFO 2025-03-05 17:35:12,975 basehttp 4580 4640 - Broken pipe from ('127.0.0.1', 65484)
+INFO 2025-03-05 17:35:13,288 basehttp 4580 13580 - Broken pipe from ('127.0.0.1', 65483)
+INFO 2025-03-05 17:35:21,207 basehttp 4580 15536 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-03-05 17:35:21,265 basehttp 4580 15536 - Broken pipe from ('127.0.0.1', 49287)
+INFO 2025-03-05 17:35:23,797 basehttp 4580 19096 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-03-05 17:35:26,709 basehttp 4580 19096 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:35:26,757 basehttp 4580 19096 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-03-05 17:35:29,545 basehttp 4580 19096 "GET /customer/cart/ HTTP/1.1" 200 16425
+INFO 2025-03-05 17:35:31,427 basehttp 4580 19096 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-03-05 17:35:37,583 util 4580 19096 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-03-05 17:35:39,226 util 4580 19096 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-03-05 17:35:39,346 basehttp 4580 19096 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:35:39,368 util 4580 19096 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:35:39,748 util 4580 19096 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:35:39,831 log 4580 19096 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:35:39,866 basehttp 4580 19096 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:38:26,445 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:38:29,091 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:38:29,307 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:38:29,392 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:38:33,643 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:38:34,010 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:38:34,284 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:38:34,400 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:40:01,087 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:40:02,513 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:40:02,616 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:40:02,666 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:40:03,962 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:40:04,323 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:40:04,390 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:40:04,424 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:40:53,977 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:40:54,404 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:40:54,668 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:40:54,707 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:40:57,183 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:40:57,648 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:40:57,821 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:40:57,860 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:41:39,088 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:41:39,464 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:41:39,544 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:41:39,583 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+INFO 2025-03-05 17:41:41,292 util 4580 16084 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT
+INFO 2025-03-05 17:41:41,697 util 4580 16084 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJ2jC1G57gfc4s1CUUddxT response_code=200
+ERROR 2025-03-05 17:41:41,759 log 4580 16084 Internal Server Error: /payments/process/12/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:41:41,798 basehttp 4580 16084 "GET /payments/process/12/ HTTP/1.1" 500 102332
+ERROR 2025-03-05 17:41:57,511 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:41:57,542 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114635
+ERROR 2025-03-05 17:42:05,195 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:42:05,207 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114881
+ERROR 2025-03-05 17:42:26,936 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:42:26,945 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114897
+ERROR 2025-03-05 17:42:28,131 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:42:28,144 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114897
+ERROR 2025-03-05 17:42:32,826 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:42:32,836 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114897
+ERROR 2025-03-05 17:43:02,447 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:43:02,457 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114897
+ERROR 2025-03-05 17:43:03,700 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:43:03,712 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114897
+ERROR 2025-03-05 17:43:06,824 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:43:06,838 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114899
+ERROR 2025-03-05 17:44:22,292 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:44:22,299 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114899
+ERROR 2025-03-05 17:44:23,524 log 4580 16084 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 236, in checkout
+    return redirect('customers:restaurant_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'restaurant_list' not found. 'restaurant_list' is not a valid view function or pattern name.
+ERROR 2025-03-05 17:44:23,553 basehttp 4580 16084 "GET /customer/checkout/ HTTP/1.1" 500 114901
+INFO 2025-03-05 17:44:51,800 basehttp 4580 16084 "GET / HTTP/1.1" 200 21223
+WARNING 2025-03-05 17:44:51,963 basehttp 4580 17260 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:44:51,964 basehttp 4580 16084 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-05 17:44:51,983 basehttp 4580 13276 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:44:51,983 basehttp 4580 1880 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:44:51,985 basehttp 4580 22372 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:48:05,344 autoreload 3676 3864 Watching for file changes with StatReloader
+INFO 2025-03-05 17:48:11,414 basehttp 3676 996 "GET / HTTP/1.1" 200 17583
+WARNING 2025-03-05 17:48:11,584 basehttp 3676 22344 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:48:11,604 basehttp 3676 16148 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-03-05 17:48:12,098 basehttp 3676 480 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+WARNING 2025-03-05 17:48:12,115 basehttp 3676 480 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:48:12,121 basehttp 3676 6552 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+WARNING 2025-03-05 17:48:12,153 basehttp 3676 6552 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:48:12,192 basehttp 3676 11464 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-03-05 17:48:12,199 basehttp 3676 588 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-03-05 17:48:12,221 basehttp 3676 2356 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-03-05 17:48:12,221 basehttp 3676 10480 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+WARNING 2025-03-05 17:48:12,226 basehttp 3676 19412 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:48:12,410 basehttp 3676 2356 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:48:12,460 basehttp 3676 588 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:48:12,460 basehttp 3676 11464 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-05 17:48:12,466 basehttp 3676 10480 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-05 17:48:12,469 basehttp 3676 20420 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-05 17:48:12,821 basehttp 3676 2944 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-03-05 17:48:13,026 log 3676 18632 Not Found: /favicon.ico
+WARNING 2025-03-05 17:48:13,028 basehttp 3676 18632 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-03-05 17:48:15,424 basehttp 3676 18632 "GET /login/ HTTP/1.1" 200 7081
+WARNING 2025-03-05 17:48:16,984 log 3676 18632 Not Found: /favicon.ico
+INFO 2025-03-05 17:48:17,011 basehttp 3676 18632 - Broken pipe from ('127.0.0.1', 63543)
+INFO 2025-03-05 17:48:31,907 basehttp 3676 15964 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:48:32,072 basehttp 3676 15964 "GET /customer/dashboard/ HTTP/1.1" 200 22492
+INFO 2025-03-05 17:48:41,197 basehttp 3676 15964 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-03-05 17:48:41,254 basehttp 3676 15964 "GET /media/restaurant_logos/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-03-05 17:48:41,259 basehttp 3676 2244 "GET /media/menu_items/WIN_20241104_21_52_22_Pro.jpg HTTP/1.1" 200 127310
+INFO 2025-03-05 17:48:44,698 basehttp 3676 2244 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-03-05 17:48:49,248 basehttp 3676 2244 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:48:49,285 basehttp 3676 2244 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-03-05 17:48:51,300 basehttp 3676 2244 "GET /customer/cart/ HTTP/1.1" 200 16425
+INFO 2025-03-05 17:48:52,962 basehttp 3676 2244 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-03-05 17:48:58,187 util 3676 2244 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-03-05 17:48:59,967 util 3676 2244 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-03-05 17:49:00,014 basehttp 3676 2244 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-03-05 17:49:00,034 util 3676 2244 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5
+INFO 2025-03-05 17:49:00,397 util 3676 2244 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5 response_code=200
+ERROR 2025-03-05 17:49:00,501 log 3676 2244 Internal Server Error: /payments/process/13/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBLISHABLE_KEY'?
+ERROR 2025-03-05 17:49:00,544 basehttp 3676 2244 "GET /payments/process/13/ HTTP/1.1" 500 97979
+INFO 2025-03-05 17:54:39,743 autoreload 3676 3864 C:\Users\de\Desktop\spicy\foodrunner\settings.py changed, reloading.
+INFO 2025-03-05 17:54:41,792 autoreload 10680 7324 Watching for file changes with StatReloader
+INFO 2025-03-05 17:54:44,063 util 10680 19412 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5
+INFO 2025-03-05 17:54:45,506 util 10680 19412 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5 response_code=200
+ERROR 2025-03-05 17:54:45,605 log 10680 19412 Internal Server Error: /payments/process/13/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\payments\views.py", line 40, in process_payment
+    'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLIC_KEY'. Did you mean: 'STRIPE_PUBL_KEY'?
+ERROR 2025-03-05 17:54:45,666 basehttp 10680 19412 "GET /payments/process/13/ HTTP/1.1" 500 97838
+INFO 2025-03-05 17:54:45,803 autoreload 10680 7324 C:\Users\de\Desktop\spicy\foodrunner\settings.py changed, reloading.
+INFO 2025-03-05 17:54:47,396 autoreload 19928 13900 Watching for file changes with StatReloader
+INFO 2025-03-05 17:54:49,184 util 19928 8800 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5
+INFO 2025-03-05 17:54:50,300 util 19928 8800 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3QzJFeC1G57gfc4s0OuG8lY5 response_code=200
+INFO 2025-03-05 17:54:50,423 basehttp 19928 8800 "GET /payments/process/13/ HTTP/1.1" 200 22078
+INFO 2025-03-05 17:59:16,344 basehttp 19928 1716 "GET /payments/complete/13/?payment_intent=pi_3QzJFeC1G57gfc4s0OuG8lY5&payment_intent_client_secret=pi_3QzJFeC1G57gfc4s0OuG8lY5_secret_kPJu7bCryZdFazZglfBAutSis&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-03-05 17:59:16,502 basehttp 19928 1716 "GET /customer/orders/13/ HTTP/1.1" 200 15138
+WARNING 2025-03-05 17:59:17,188 log 19928 1716 Not Found: /favicon.ico
+INFO 2025-03-05 17:59:17,190 basehttp 19928 1716 - Broken pipe from ('127.0.0.1', 55266)
+INFO 2025-03-05 17:59:34,780 basehttp 19928 22364 "GET /customer/orders/ HTTP/1.1" 200 21390
+INFO 2025-03-05 18:00:02,726 basehttp 19928 22364 "GET /customer/orders/8/ HTTP/1.1" 200 15231
+INFO 2025-03-05 18:00:02,953 basehttp 19928 22364 "GET /media/restaurant_logos/a_4Z6emzZ.webp HTTP/1.1" 200 16758
+INFO 2025-03-31 10:28:29,298 autoreload 20628 29284 Watching for file changes with StatReloader
+INFO 2025-03-31 10:29:13,710 autoreload 21228 6308 Watching for file changes with StatReloader
+INFO 2025-03-31 10:29:37,763 basehttp 21228 17464 "GET / HTTP/1.1" 200 17583
+INFO 2025-03-31 10:29:38,595 basehttp 21228 17464 "GET / HTTP/1.1" 200 17583
+WARNING 2025-03-31 10:29:39,135 basehttp 21228 9948 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,150 basehttp 21228 24960 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-03-31 10:29:39,370 basehttp 21228 13940 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-03-31 10:29:39,402 basehttp 21228 27272 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-03-31 10:29:39,419 basehttp 21228 27448 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-03-31 10:29:39,425 basehttp 21228 14648 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-03-31 10:29:39,431 basehttp 21228 8224 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-03-31 10:29:39,440 basehttp 21228 18456 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+WARNING 2025-03-31 10:29:39,528 basehttp 21228 27272 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,528 basehttp 21228 14648 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,528 basehttp 21228 13940 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,809 basehttp 21228 8224 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,813 basehttp 21228 27448 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-03-31 10:29:39,817 basehttp 21228 18456 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,843 basehttp 21228 3924 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-03-31 10:29:39,846 basehttp 21228 15992 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-03-31 10:29:40,388 basehttp 21228 31524 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-03-31 10:29:40,465 log 21228 1840 Not Found: /favicon.ico
+WARNING 2025-03-31 10:29:40,467 basehttp 21228 1840 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-04-14 16:47:25,101 autoreload 29616 23656 Watching for file changes with StatReloader
