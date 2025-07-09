@@ -998,3 +998,775 @@ INFO 2025-03-31 10:29:40,388 basehttp 21228 31524 "GET /static/django-browser-re
 WARNING 2025-03-31 10:29:40,465 log 21228 1840 Not Found: /favicon.ico
 WARNING 2025-03-31 10:29:40,467 basehttp 21228 1840 "GET /favicon.ico HTTP/1.1" 404 3714
 INFO 2025-04-14 16:47:25,101 autoreload 29616 23656 Watching for file changes with StatReloader
+INFO 2025-04-14 16:48:19,887 basehttp 29616 45788 "GET / HTTP/1.1" 200 17583
+INFO 2025-04-14 16:48:20,435 basehttp 29616 37244 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-04-14 16:48:20,507 basehttp 29616 45788 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-04-14 16:48:20,656 basehttp 29616 21716 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-04-14 16:48:20,664 basehttp 29616 37244 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-04-14 16:48:20,666 basehttp 29616 2576 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-04-14 16:48:20,677 basehttp 29616 2576 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+WARNING 2025-04-14 16:48:20,966 basehttp 29616 45788 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:20,966 basehttp 29616 37244 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-04-14 16:48:20,970 basehttp 29616 21716 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:20,973 basehttp 29616 9432 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:20,976 basehttp 29616 27520 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:21,955 basehttp 29616 2576 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:22,011 basehttp 29616 23844 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-04-14 16:48:22,024 basehttp 29616 33944 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:22,027 basehttp 29616 37240 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-04-14 16:48:22,029 basehttp 29616 42968 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-04-14 16:48:22,501 basehttp 29616 23372 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-04-14 16:48:22,594 log 29616 23372 Not Found: /favicon.ico
+WARNING 2025-04-14 16:48:22,595 basehttp 29616 23372 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-04-14 16:49:00,533 basehttp 29616 23372 "GET /register/ HTTP/1.1" 200 8570
+INFO 2025-04-14 16:49:04,680 basehttp 29616 23372 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-04-14 16:49:23,311 basehttp 29616 23372 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-04-14 16:49:23,404 basehttp 29616 23372 "GET /restaurant/dashboard/ HTTP/1.1" 200 21314
+INFO 2025-04-14 16:49:38,511 basehttp 29616 23372 "GET /restaurant/menu/ HTTP/1.1" 200 10206
+INFO 2025-04-14 16:49:38,595 basehttp 29616 23372 "GET /media/menu_items/a.webp HTTP/1.1" 200 16758
+INFO 2025-05-26 09:07:26,174 autoreload 12496 27396 Watching for file changes with StatReloader
+INFO 2025-05-26 09:11:33,241 basehttp 12496 10724 "GET / HTTP/1.1" 200 17583
+WARNING 2025-05-26 09:11:37,862 basehttp 12496 23304 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:11:38,434 basehttp 12496 356 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-05-26 09:11:39,006 basehttp 12496 3824 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-05-26 09:11:39,011 basehttp 12496 24696 "GET /static/js/main.js HTTP/1.1" 200 934
+WARNING 2025-05-26 09:11:39,130 basehttp 12496 3824 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:11:39,132 basehttp 12496 24696 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 09:11:39,132 basehttp 12496 13880 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-05-26 09:11:39,132 basehttp 12496 15916 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-05-26 09:11:39,196 basehttp 12496 16668 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+WARNING 2025-05-26 09:11:39,200 basehttp 12496 13880 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 09:11:39,239 basehttp 12496 6076 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+WARNING 2025-05-26 09:11:40,427 basehttp 12496 15916 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:11:40,427 basehttp 12496 16668 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 09:11:50,158 log 12496 6076 Not Found: /favicon.ico
+WARNING 2025-05-26 09:11:50,161 basehttp 12496 6076 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-05-26 09:11:56,424 basehttp 12496 6076 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+INFO 2025-05-26 09:12:33,267 basehttp 12496 17716 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 09:13:08,251 basehttp 12496 17716 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:13:14,866 basehttp 12496 17716 "GET /restaurant/dashboard/ HTTP/1.1" 200 21314
+INFO 2025-05-26 09:13:41,002 basehttp 12496 17716 - Broken pipe from ('127.0.0.1', 64648)
+INFO 2025-05-26 09:13:41,043 basehttp 12496 11032 "GET /restaurant/analytics/ HTTP/1.1" 200 0
+INFO 2025-05-26 09:13:44,465 basehttp 12496 11032 "GET /restaurant/analytics/ HTTP/1.1" 200 0
+INFO 2025-05-26 09:13:45,798 basehttp 12496 11032 "GET /restaurant/analytics/ HTTP/1.1" 200 0
+INFO 2025-05-26 09:14:05,448 basehttp 12496 11032 "GET /restaurant/dashboard/ HTTP/1.1" 200 21031
+INFO 2025-05-26 09:14:10,372 basehttp 12496 11032 "GET /restaurant/orders/?status=delivered HTTP/1.1" 200 7910
+INFO 2025-05-26 09:14:57,482 basehttp 12496 11032 "GET /restaurant/settings/ HTTP/1.1" 200 17379
+INFO 2025-05-26 09:14:57,931 basehttp 12496 11032 "GET /media/restaurant_logos/a_4Z6emzZ.webp HTTP/1.1" 200 16758
+INFO 2025-05-26 09:15:46,658 basehttp 12496 11032 "GET /restaurant/orders/?status=pending HTTP/1.1" 200 20995
+INFO 2025-05-26 09:16:33,677 basehttp 12496 11032 - Broken pipe from ('127.0.0.1', 65445)
+INFO 2025-05-26 09:16:33,810 basehttp 12496 24168 "GET /restaurant/orders/ HTTP/1.1" 200 21649
+INFO 2025-05-26 09:16:35,455 basehttp 12496 24168 "GET /restaurant/orders/ HTTP/1.1" 200 21649
+INFO 2025-05-26 09:16:54,011 basehttp 12496 24168 "POST /restaurant/orders/2/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:16:54,314 basehttp 12496 24168 "GET /restaurant/orders/2/ HTTP/1.1" 200 11543
+INFO 2025-05-26 09:17:04,823 basehttp 12496 24168 "POST /restaurant/orders/2/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:17:04,886 basehttp 12496 24168 "GET /restaurant/orders/2/ HTTP/1.1" 200 11563
+INFO 2025-05-26 09:17:16,563 basehttp 12496 24168 "POST /restaurant/orders/2/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:17:16,609 basehttp 12496 24168 "GET /restaurant/orders/2/ HTTP/1.1" 200 11290
+INFO 2025-05-26 09:17:30,687 basehttp 12496 24168 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:17:31,001 basehttp 12496 24168 "GET / HTTP/1.1" 200 17879
+WARNING 2025-05-26 09:17:31,805 basehttp 12496 24168 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:17:31,807 basehttp 12496 17764 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:17:31,851 basehttp 12496 16420 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 09:17:31,855 basehttp 12496 8392 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 09:17:31,855 basehttp 12496 16648 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 09:17:34,479 basehttp 12496 16036 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 09:17:48,417 basehttp 12496 16036 "POST /login/ HTTP/1.1" 200 7376
+INFO 2025-05-26 09:18:10,633 basehttp 12496 16036 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:18:11,029 basehttp 12496 16036 "GET /customer/dashboard/ HTTP/1.1" 200 22479
+INFO 2025-05-26 09:18:41,160 basehttp 12496 16036 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-05-26 09:18:41,342 basehttp 12496 26912 "GET /media/restaurant_logos/istockphoto-944478708-612x612.jpg HTTP/1.1" 200 49815
+INFO 2025-05-26 09:18:41,345 basehttp 12496 16036 "GET /media/restaurant_logos/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-05-26 09:19:41,292 basehttp 12496 26912 "GET /customer/orders/ HTTP/1.1" 200 21399
+INFO 2025-05-26 09:19:51,654 basehttp 12496 26912 "GET /customer/orders/8/ HTTP/1.1" 200 15231
+INFO 2025-05-26 09:20:07,236 basehttp 12496 26912 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 09:20:09,921 basehttp 12496 26912 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-05-26 09:20:24,587 basehttp 12496 26912 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-05-26 09:20:26,773 basehttp 12496 26912 "GET /media/menu_items/WIN_20241104_21_52_22_Pro.jpg HTTP/1.1" 200 127310
+INFO 2025-05-26 09:20:43,443 basehttp 12496 26912 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-05-26 09:21:38,339 basehttp 12496 26912 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:21:38,446 basehttp 12496 26912 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-05-26 09:21:44,974 basehttp 12496 26912 "GET /customer/cart/ HTTP/1.1" 200 16684
+ERROR 2025-05-26 09:21:57,489 log 12496 26912 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:21:57,586 basehttp 12496 26912 "GET /customer/checkout/ HTTP/1.1" 500 95005
+ERROR 2025-05-26 09:22:04,918 log 12496 26912 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:22:04,998 basehttp 12496 26912 "GET /customer/checkout/ HTTP/1.1" 500 95005
+INFO 2025-05-26 09:25:45,477 autoreload 12496 27396 C:\Users\de\Desktop\spicy\foodrunner\settings.py changed, reloading.
+INFO 2025-05-26 09:25:52,969 autoreload 24416 25072 Watching for file changes with StatReloader
+ERROR 2025-05-26 09:25:56,528 log 24416 6284 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:25:56,618 basehttp 24416 6284 "GET /customer/checkout/ HTTP/1.1" 500 94871
+ERROR 2025-05-26 09:25:59,484 log 24416 6284 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:25:59,524 basehttp 24416 6284 "GET /customer/checkout/ HTTP/1.1" 500 95005
+ERROR 2025-05-26 09:26:02,087 log 24416 6284 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:26:02,125 basehttp 24416 6284 "GET /customer/checkout/ HTTP/1.1" 500 95005
+ERROR 2025-05-26 09:26:22,572 log 24416 6284 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:26:22,645 basehttp 24416 6284 "GET /customer/checkout/ HTTP/1.1" 500 95005
+ERROR 2025-05-26 09:28:25,452 log 24416 1788 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:28:25,521 basehttp 24416 1788 "GET /customer/checkout/ HTTP/1.1" 500 95005
+ERROR 2025-05-26 09:28:28,430 log 24416 1788 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:28:28,535 basehttp 24416 1788 "GET /customer/checkout/ HTTP/1.1" 500 95005
+INFO 2025-05-26 09:31:33,600 autoreload 24416 25072 C:\Users\de\Desktop\spicy\customers\views.py changed, reloading.
+INFO 2025-05-26 09:31:52,306 autoreload 10116 21672 Watching for file changes with StatReloader
+ERROR 2025-05-26 09:31:56,785 log 10116 16876 Internal Server Error: /customer/checkout/
+Traceback (most recent call last):
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\customers\views.py", line 231, in checkout
+    public_key = settings.STRIPE_PUBLISHABLE_KEY
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\de\Desktop\spicy\myenv\Lib\site-packages\django\conf\__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'STRIPE_PUBLISHABLE_KEY'. Did you mean: 'STRIPE_PUBLIC_KEY'?
+ERROR 2025-05-26 09:31:56,826 basehttp 10116 16876 "GET /customer/checkout/ HTTP/1.1" 500 94998
+INFO 2025-05-26 09:32:12,081 autoreload 10116 21672 C:\Users\de\Desktop\spicy\customers\views.py changed, reloading.
+INFO 2025-05-26 09:32:14,960 autoreload 25620 14364 Watching for file changes with StatReloader
+INFO 2025-05-26 09:32:16,834 basehttp 25620 15460 "GET /customer/checkout/ HTTP/1.1" 200 22107
+INFO 2025-05-26 09:33:24,791 util 25620 15460 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-05-26 09:33:26,728 util 25620 15460 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-05-26 09:33:27,219 basehttp 25620 15460 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-05-26 09:33:27,280 util 25620 15460 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RSuapC1G57gfc4s0HGOMmz7
+INFO 2025-05-26 09:33:27,699 util 25620 15460 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RSuapC1G57gfc4s0HGOMmz7 response_code=200
+INFO 2025-05-26 09:33:27,738 basehttp 25620 15460 "GET /payments/process/14/ HTTP/1.1" 200 22078
+INFO 2025-05-26 10:55:02,623 autoreload 18184 2844 Watching for file changes with StatReloader
+INFO 2025-05-26 10:55:08,648 basehttp 18184 17944 "GET / HTTP/1.1" 200 17583
+WARNING 2025-05-26 10:55:08,827 basehttp 18184 17960 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:08,834 basehttp 18184 3052 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+INFO 2025-05-26 10:55:09,027 basehttp 18184 13104 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-05-26 10:55:09,094 basehttp 18184 17944 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-05-26 10:55:09,099 basehttp 18184 11944 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-05-26 10:55:09,103 basehttp 18184 17700 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+WARNING 2025-05-26 10:55:09,133 basehttp 18184 11944 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 10:55:09,133 basehttp 18184 3328 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-05-26 10:55:09,134 basehttp 18184 9956 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+WARNING 2025-05-26 10:55:09,136 basehttp 18184 13104 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:09,136 basehttp 18184 17700 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:09,444 basehttp 18184 3328 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:09,444 basehttp 18184 17944 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:09,444 basehttp 18184 9956 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 10:55:09,448 basehttp 18184 9572 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:09,451 basehttp 18184 14468 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 10:55:09,679 basehttp 18184 7780 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-05-26 10:55:09,869 log 18184 5816 Not Found: /favicon.ico
+WARNING 2025-05-26 10:55:09,870 basehttp 18184 5816 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-05-26 10:55:13,062 basehttp 18184 5816 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 10:55:24,948 basehttp 18184 5816 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:55:25,075 basehttp 18184 5816 "GET /restaurant/dashboard/ HTTP/1.1" 200 19038
+INFO 2025-05-26 10:55:39,106 basehttp 18184 5816 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:55:39,128 basehttp 18184 5816 "GET / HTTP/1.1" 200 17879
+WARNING 2025-05-26 10:55:39,254 basehttp 18184 5816 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,278 basehttp 18184 18416 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 10:55:39,278 basehttp 18184 11944 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,283 basehttp 18184 13104 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,286 basehttp 18184 17944 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,386 basehttp 18184 9956 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,393 basehttp 18184 5264 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,397 basehttp 18184 9572 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 10:55:39,397 basehttp 18184 14468 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 10:55:39,400 basehttp 18184 17340 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 10:55:42,325 basehttp 18184 9540 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 10:55:53,788 basehttp 18184 9540 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:55:53,943 basehttp 18184 9540 "GET /customer/dashboard/ HTTP/1.1" 200 22476
+INFO 2025-05-26 10:55:59,264 basehttp 18184 9540 "GET /customer/orders/10/ HTTP/1.1" 200 15138
+INFO 2025-05-26 10:55:59,331 basehttp 18184 9540 "GET /media/restaurant_logos/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-05-26 10:56:25,067 basehttp 18184 9540 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 10:56:27,757 basehttp 18184 9540 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-05-26 10:56:27,816 basehttp 18184 9540 "GET /media/restaurant_logos/a_4Z6emzZ.webp HTTP/1.1" 200 16758
+INFO 2025-05-26 10:56:27,820 basehttp 18184 15724 "GET /media/restaurant_logos/istockphoto-944478708-612x612.jpg HTTP/1.1" 200 49815
+INFO 2025-05-26 10:56:39,909 basehttp 18184 15724 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-05-26 10:56:39,986 basehttp 18184 15724 "GET /media/menu_items/WIN_20241104_21_52_22_Pro.jpg HTTP/1.1" 200 127310
+INFO 2025-05-26 10:56:43,212 basehttp 18184 15724 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-05-26 10:56:53,187 basehttp 18184 15724 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:56:53,225 basehttp 18184 15724 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-05-26 10:56:56,400 basehttp 18184 15724 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-05-26 10:56:58,918 basehttp 18184 15724 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:56:58,956 basehttp 18184 15724 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-05-26 10:57:06,646 basehttp 18184 15724 "GET /customer/cart/ HTTP/1.1" 200 16425
+INFO 2025-05-26 10:57:09,457 basehttp 18184 15724 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-05-26 10:57:23,437 util 18184 15724 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-05-26 10:57:25,358 util 18184 15724 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-05-26 10:57:25,402 basehttp 18184 15724 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-05-26 10:57:25,427 util 18184 15724 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RSvu5C1G57gfc4s1UBIHFBY
+INFO 2025-05-26 10:57:25,834 util 18184 15724 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RSvu5C1G57gfc4s1UBIHFBY response_code=200
+INFO 2025-05-26 10:57:25,854 basehttp 18184 15724 "GET /payments/process/15/ HTTP/1.1" 200 22078
+INFO 2025-05-26 10:59:34,574 basehttp 18184 1220 "GET /payments/complete/15/?payment_intent=pi_3RSvu5C1G57gfc4s1UBIHFBY&payment_intent_client_secret=pi_3RSvu5C1G57gfc4s1UBIHFBY_secret_D45hF6BZWUk0PJWiuabqS5F78&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-05-26 10:59:34,600 basehttp 18184 1220 "GET /customer/orders/15/ HTTP/1.1" 200 15137
+WARNING 2025-05-26 10:59:35,057 log 18184 1220 Not Found: /favicon.ico
+INFO 2025-05-26 10:59:35,059 basehttp 18184 1220 - Broken pipe from ('127.0.0.1', 54254)
+INFO 2025-05-26 11:27:04,571 autoreload 19180 13104 Watching for file changes with StatReloader
+INFO 2025-05-26 11:27:17,541 basehttp 19180 20196 "GET / HTTP/1.1" 200 19311
+WARNING 2025-05-26 11:27:17,661 basehttp 19180 19628 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:27:17,693 basehttp 19180 19484 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 11:27:17,708 basehttp 19180 20440 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:27:17,714 basehttp 19180 20448 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:27:17,723 basehttp 19180 20424 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:27:17,766 basehttp 19180 18872 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+INFO 2025-05-26 11:27:17,868 basehttp 19180 20196 - Broken pipe from ('127.0.0.1', 57204)
+INFO 2025-05-26 11:27:17,880 basehttp 19180 19608 - Broken pipe from ('127.0.0.1', 57210)
+INFO 2025-05-26 11:27:17,904 basehttp 19180 3064 - Broken pipe from ('127.0.0.1', 57216)
+INFO 2025-05-26 11:27:17,911 basehttp 19180 17552 - Broken pipe from ('127.0.0.1', 57211)
+INFO 2025-05-26 11:27:17,911 basehttp 19180 20420 - Broken pipe from ('127.0.0.1', 57212)
+INFO 2025-05-26 11:27:29,059 basehttp 19180 19800 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 11:27:33,059 basehttp 19180 19800 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-05-26 11:27:33,164 basehttp 19180 19800 - Broken pipe from ('127.0.0.1', 57315)
+INFO 2025-05-26 11:27:33,169 basehttp 19180 19832 - Broken pipe from ('127.0.0.1', 57399)
+INFO 2025-05-26 11:27:33,171 basehttp 19180 19332 - Broken pipe from ('127.0.0.1', 57400)
+INFO 2025-05-26 11:27:36,831 basehttp 19180 20180 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-05-26 11:27:36,920 basehttp 19180 20180 - Broken pipe from ('127.0.0.1', 57434)
+INFO 2025-05-26 11:27:42,315 basehttp 19180 17548 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-05-26 11:27:45,141 basehttp 19180 17548 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:27:45,189 basehttp 19180 17548 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-05-26 11:27:49,307 basehttp 19180 17548 "GET /customer/cart/add/2/ HTTP/1.1" 200 8688
+INFO 2025-05-26 11:27:52,031 basehttp 19180 17548 "POST /customer/cart/add/2/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:27:52,077 basehttp 19180 17548 "GET /customer/restaurants/2/ HTTP/1.1" 200 11836
+INFO 2025-05-26 11:27:56,540 basehttp 19180 17548 "GET /customer/cart/ HTTP/1.1" 200 16431
+INFO 2025-05-26 11:27:58,695 basehttp 19180 17548 "GET /customer/checkout/ HTTP/1.1" 200 21970
+INFO 2025-05-26 11:28:09,546 util 19180 17548 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-05-26 11:28:11,327 util 19180 17548 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-05-26 11:28:11,358 basehttp 19180 17548 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:28:11,383 util 19180 17548 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RSwNrC1G57gfc4s0F3z7Odx
+INFO 2025-05-26 11:28:11,797 util 19180 17548 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RSwNrC1G57gfc4s0F3z7Odx response_code=200
+INFO 2025-05-26 11:28:11,817 basehttp 19180 17548 "GET /payments/process/16/ HTTP/1.1" 200 22078
+INFO 2025-05-26 11:29:25,231 basehttp 19180 17548 "GET /payments/complete/16/?payment_intent=pi_3RSwNrC1G57gfc4s0F3z7Odx&payment_intent_client_secret=pi_3RSwNrC1G57gfc4s0F3z7Odx_secret_PIZFVrdMdRvvj2zGRNi1XnmfQ&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-05-26 11:29:25,388 basehttp 19180 17548 "GET /customer/orders/16/ HTTP/1.1" 200 15137
+INFO 2025-05-26 11:29:35,786 basehttp 19180 17548 "GET /customer/orders/ HTTP/1.1" 200 24648
+INFO 2025-05-26 11:30:13,776 basehttp 19180 17548 "GET /customer/orders/16/ HTTP/1.1" 200 15137
+INFO 2025-05-26 11:30:33,392 basehttp 19180 17548 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 11:30:35,575 basehttp 19180 17548 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-05-26 11:30:40,470 basehttp 19180 17548 "GET /customer/restaurants/1/ HTTP/1.1" 200 12402
+INFO 2025-05-26 11:30:40,562 basehttp 19180 17548 "GET /media/menu_items/a.webp HTTP/1.1" 200 16758
+INFO 2025-05-26 11:30:43,299 basehttp 19180 17548 "GET /customer/cart/add/1/ HTTP/1.1" 200 8873
+INFO 2025-05-26 11:30:51,880 basehttp 19180 17548 "POST /customer/cart/add/1/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:30:51,925 basehttp 19180 17548 "GET /customer/restaurants/1/ HTTP/1.1" 200 12687
+INFO 2025-05-26 11:30:55,654 basehttp 19180 17548 "GET /customer/cart/add/1/ HTTP/1.1" 200 8873
+INFO 2025-05-26 11:31:00,475 basehttp 19180 17548 "GET /customer/cart/ HTTP/1.1" 200 16433
+INFO 2025-05-26 11:31:02,853 basehttp 19180 17548 "GET /customer/checkout/ HTTP/1.1" 200 21951
+INFO 2025-05-26 11:31:12,285 util 19180 17548 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-05-26 11:31:14,178 util 19180 17548 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-05-26 11:31:14,204 basehttp 19180 17548 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:31:14,230 util 19180 17548 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RSwQoC1G57gfc4s1NiY6YIq
+INFO 2025-05-26 11:31:14,650 util 19180 17548 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RSwQoC1G57gfc4s1NiY6YIq response_code=200
+INFO 2025-05-26 11:31:14,665 basehttp 19180 17548 "GET /payments/process/17/ HTTP/1.1" 200 22077
+INFO 2025-05-26 11:31:40,790 basehttp 19180 17548 "GET /payments/complete/17/?payment_intent=pi_3RSwQoC1G57gfc4s1NiY6YIq&payment_intent_client_secret=pi_3RSwQoC1G57gfc4s1NiY6YIq_secret_PybcpU4JmOuoVFKA8MoMdT5Ob&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-05-26 11:31:40,877 basehttp 19180 17548 "GET /customer/orders/17/ HTTP/1.1" 200 15118
+INFO 2025-05-26 11:32:21,468 basehttp 19180 17548 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 11:32:24,879 basehttp 19180 17548 "GET /customer/cart/ HTTP/1.1" 200 13533
+INFO 2025-05-26 11:32:32,081 basehttp 19180 17548 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:32:32,105 basehttp 19180 17548 "GET / HTTP/1.1" 200 17879
+WARNING 2025-05-26 11:32:32,310 basehttp 19180 17548 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:32:32,326 basehttp 19180 9064 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 11:32:32,329 basehttp 19180 2148 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:32:32,337 basehttp 19180 8720 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:32:32,341 basehttp 19180 6824 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 11:32:39,404 basehttp 19180 14160 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 11:33:21,278 basehttp 19180 14160 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:33:21,327 basehttp 19180 14160 "GET /delivery/dashboard/ HTTP/1.1" 200 8546
+INFO 2025-05-26 11:33:28,370 basehttp 19180 14160 "POST /delivery/dashboard/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:33:28,403 basehttp 19180 14160 "GET /delivery/dashboard/ HTTP/1.1" 200 8552
+INFO 2025-05-26 11:33:44,043 basehttp 19180 14160 "GET /delivery/dashboard/ HTTP/1.1" 200 8265
+INFO 2025-05-26 11:33:51,272 basehttp 19180 14160 "GET /delivery/history/ HTTP/1.1" 200 6480
+INFO 2025-05-26 11:34:04,114 basehttp 19180 14160 "GET /profile/ HTTP/1.1" 200 10797
+INFO 2025-05-26 11:34:12,347 basehttp 19180 14160 "GET /delivery/dashboard/ HTTP/1.1" 200 8265
+INFO 2025-05-26 11:34:23,378 basehttp 19180 14160 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:34:23,406 basehttp 19180 14160 "GET / HTTP/1.1" 200 17879
+WARNING 2025-05-26 11:34:23,573 basehttp 19180 14160 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:34:23,580 basehttp 19180 1972 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-05-26 11:34:23,589 basehttp 19180 19384 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:34:23,594 basehttp 19180 9872 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-05-26 11:34:23,599 basehttp 19180 11176 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-05-26 11:34:40,837 basehttp 19180 19928 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-05-26 11:36:23,106 basehttp 19180 19928 "POST /login/ HTTP/1.1" 200 7371
+INFO 2025-05-26 11:36:39,285 basehttp 19180 19928 "POST /login/ HTTP/1.1" 200 7372
+INFO 2025-05-26 11:36:57,971 basehttp 19180 19928 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:36:58,063 basehttp 19180 19928 "GET /restaurant/dashboard/ HTTP/1.1" 200 22449
+INFO 2025-05-26 11:37:09,462 basehttp 19180 19928 "GET /restaurant/orders/17/ HTTP/1.1" 200 11949
+INFO 2025-05-26 11:37:15,597 basehttp 19180 19928 "POST /restaurant/orders/17/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:37:15,649 basehttp 19180 19928 "GET /restaurant/orders/17/ HTTP/1.1" 200 11542
+INFO 2025-05-26 11:37:19,498 basehttp 19180 19928 "POST /restaurant/orders/17/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:37:19,545 basehttp 19180 19928 "GET /restaurant/orders/17/ HTTP/1.1" 200 11562
+INFO 2025-05-26 11:37:23,035 basehttp 19180 19928 "POST /restaurant/orders/17/update-status/ HTTP/1.1" 302 0
+INFO 2025-05-26 11:37:23,079 basehttp 19180 19928 "GET /restaurant/orders/17/ HTTP/1.1" 200 11288
+INFO 2025-05-26 11:37:47,545 basehttp 19180 19928 "GET /restaurant/menu/ HTTP/1.1" 200 10206
+INFO 2025-05-26 11:38:11,969 basehttp 19180 19928 "GET /restaurant/dashboard/ HTTP/1.1" 200 22175
+INFO 2025-05-26 11:38:16,860 basehttp 19180 19928 "GET /restaurant/orders/?status=delivered HTTP/1.1" 200 7910
+INFO 2025-06-08 18:45:40,215 autoreload 6824 4056 Watching for file changes with StatReloader
+INFO 2025-06-08 18:46:06,040 basehttp 6824 1820 "GET / HTTP/1.1" 200 17583
+INFO 2025-06-08 18:46:11,735 basehttp 6824 1820 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-06-08 18:46:11,876 basehttp 6824 19852 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-06-08 18:46:11,893 basehttp 6824 1820 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-06-08 18:46:11,926 basehttp 6824 19844 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-06-08 18:46:11,986 basehttp 6824 19852 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-06-08 18:46:12,088 basehttp 6824 19788 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+WARNING 2025-06-08 18:46:13,722 basehttp 6824 19852 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-08 18:46:13,797 basehttp 6824 1820 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-08 18:46:13,797 basehttp 6824 19856 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-08 18:46:13,797 basehttp 6824 19844 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-08 18:46:13,799 basehttp 6824 19848 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-08 18:46:14,401 log 6824 19788 Not Found: /favicon.ico
+WARNING 2025-06-08 18:46:14,403 basehttp 6824 19788 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-06-08 18:46:31,340 basehttp 6824 19788 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+INFO 2025-06-08 18:50:05,258 basehttp 6824 16268 "GET /register/ HTTP/1.1" 200 8570
+INFO 2025-06-09 12:06:58,227 autoreload 10624 20460 Watching for file changes with StatReloader
+INFO 2025-06-09 12:07:18,686 basehttp 10624 13404 "GET / HTTP/1.1" 200 17583
+WARNING 2025-06-09 12:07:18,997 basehttp 10624 2412 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:07:18,998 basehttp 10624 1388 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+INFO 2025-06-09 12:07:19,062 basehttp 10624 13404 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-06-09 12:07:19,135 basehttp 10624 7888 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-06-09 12:07:19,262 basehttp 10624 17452 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-06-09 12:07:19,393 basehttp 10624 5520 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-06-09 12:07:19,435 basehttp 10624 14928 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-06-09 12:07:19,492 basehttp 10624 16272 "GET /static/js/main.js HTTP/1.1" 200 934
+WARNING 2025-06-09 12:07:20,173 basehttp 10624 5520 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:20,173 basehttp 10624 7888 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:20,175 basehttp 10624 14928 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:21,219 basehttp 10624 16272 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:21,220 basehttp 10624 17452 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:07:21,278 basehttp 10624 13404 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:21,281 basehttp 10624 3632 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:21,284 basehttp 10624 19124 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:07:25,039 log 10624 20236 Not Found: /favicon.ico
+WARNING 2025-06-09 12:07:25,041 basehttp 10624 20236 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-06-09 12:07:25,110 basehttp 10624 20236 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+INFO 2025-06-09 12:11:47,937 autoreload 10624 20460 C:\Users\de\Desktop\spicy\delivery\models.py changed, reloading.
+INFO 2025-06-09 12:11:49,626 autoreload 14632 18912 Watching for file changes with StatReloader
+INFO 2025-06-09 12:11:51,927 basehttp 14632 18636 "GET / HTTP/1.1" 200 17583
+WARNING 2025-06-09 12:11:52,051 basehttp 14632 18636 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,056 basehttp 14632 17580 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,059 basehttp 14632 19136 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:11:52,061 basehttp 14632 20356 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,061 basehttp 14632 14040 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,387 basehttp 14632 15828 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,395 basehttp 14632 19592 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:11:52,404 basehttp 14632 17308 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,407 basehttp 14632 18972 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:11:52,409 basehttp 14632 14872 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:12:37,193 autoreload 14632 18912 C:\Users\de\Desktop\spicy\delivery\views.py changed, reloading.
+INFO 2025-06-09 12:12:38,825 autoreload 3540 15408 Watching for file changes with StatReloader
+INFO 2025-06-09 12:12:40,675 basehttp 3540 2380 "GET / HTTP/1.1" 200 17583
+WARNING 2025-06-09 12:12:40,747 basehttp 3540 2380 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:40,751 basehttp 3540 20268 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:40,753 basehttp 3540 8964 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:12:40,754 basehttp 3540 7364 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:40,755 basehttp 3540 11764 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:41,026 basehttp 3540 19364 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:41,033 basehttp 3540 13440 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:12:41,034 basehttp 3540 20084 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:41,039 basehttp 3540 2484 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:41,041 basehttp 3540 4360 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:12:46,257 basehttp 3540 8040 "GET / HTTP/1.1" 200 17583
+WARNING 2025-06-09 12:12:46,382 basehttp 3540 17544 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:12:46,387 basehttp 3540 8040 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,397 basehttp 3540 3808 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,398 basehttp 3540 7152 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,399 basehttp 3540 16716 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,556 basehttp 3540 8556 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,564 basehttp 3540 19500 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:12:46,574 basehttp 3540 9748 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,575 basehttp 3540 20216 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:12:46,579 basehttp 3540 4636 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:12:55,932 basehttp 3540 19360 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:13:18,875 basehttp 3540 19360 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:13:18,946 basehttp 3540 19360 "GET /delivery/dashboard/ HTTP/1.1" 200 18027
+INFO 2025-06-09 12:13:25,215 views 3540 19360 User 5 changed availability: False -> True
+INFO 2025-06-09 12:13:25,224 basehttp 3540 19360 "POST /delivery/availability/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:13:25,278 basehttp 3540 19360 "GET /delivery/dashboard/ HTTP/1.1" 200 18043
+INFO 2025-06-09 12:13:32,741 basehttp 3540 19360 "GET /delivery/history/ HTTP/1.1" 200 6480
+INFO 2025-06-09 12:15:34,889 basehttp 3540 11468 "GET /profile/ HTTP/1.1" 200 10797
+INFO 2025-06-09 12:15:58,461 basehttp 3540 11468 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:15:58,487 basehttp 3540 11468 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 12:15:58,685 basehttp 3540 11468 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:15:58,692 basehttp 3540 20352 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:15:58,699 basehttp 3540 2484 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:15:58,701 basehttp 3540 18952 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:15:58,709 basehttp 3540 4360 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:16:00,871 basehttp 3540 19364 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:16:17,666 basehttp 3540 19364 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:16:17,743 basehttp 3540 19364 "GET /restaurant/dashboard/ HTTP/1.1" 200 21290
+INFO 2025-06-09 12:16:25,327 basehttp 3540 19364 "GET /restaurant/orders/16/ HTTP/1.1" 200 11940
+INFO 2025-06-09 12:16:28,779 basehttp 3540 19364 "POST /restaurant/orders/16/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:16:28,821 basehttp 3540 19364 "GET /restaurant/orders/16/ HTTP/1.1" 200 11533
+INFO 2025-06-09 12:16:32,296 basehttp 3540 19364 "POST /restaurant/orders/16/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:16:32,343 basehttp 3540 19364 "GET /restaurant/orders/16/ HTTP/1.1" 200 11553
+INFO 2025-06-09 12:16:35,732 basehttp 3540 19364 "POST /restaurant/orders/16/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:16:35,774 basehttp 3540 19364 "GET /restaurant/orders/16/ HTTP/1.1" 200 11279
+INFO 2025-06-09 12:16:50,242 basehttp 3540 19364 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:16:50,265 basehttp 3540 19364 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 12:16:50,442 basehttp 3540 19364 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:16:50,446 basehttp 3540 1168 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:16:50,452 basehttp 3540 1360 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:16:50,459 basehttp 3540 18916 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:16:50,462 basehttp 3540 4076 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:16:56,381 basehttp 3540 1808 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:17:07,999 basehttp 3540 1808 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:17:08,034 basehttp 3540 1808 "GET /delivery/dashboard/ HTTP/1.1" 200 18029
+INFO 2025-06-09 12:17:16,750 basehttp 3540 1808 "GET /delivery/active/ HTTP/1.1" 200 28769
+INFO 2025-06-09 12:17:28,912 views 3540 1808 Order 2 assigned to user 5
+INFO 2025-06-09 12:17:28,915 views 3540 1808 Order 2 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 12:17:28,924 basehttp 3540 1808 "POST /delivery/orders/2/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:17:28,981 basehttp 3540 1808 "GET /delivery/orders/2/ HTTP/1.1" 200 10425
+INFO 2025-06-09 12:17:35,277 views 3540 1808 Order 2 status changed from out_for_delivery to delivered by user 5
+INFO 2025-06-09 12:17:35,289 basehttp 3540 1808 "POST /delivery/orders/2/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:17:35,331 basehttp 3540 1808 "GET /delivery/orders/2/ HTTP/1.1" 200 9871
+INFO 2025-06-09 12:33:24,010 basehttp 3540 17800 "GET /delivery/active/ HTTP/1.1" 200 25328
+INFO 2025-06-09 12:42:09,257 basehttp 3540 11324 "GET /delivery/active/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:42:09,275 basehttp 3540 11324 "GET /login/?next=/delivery/active/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:42:09,537 basehttp 3540 18796 "GET /static/js/main.js HTTP/1.1" 200 934
+INFO 2025-06-09 12:42:09,537 basehttp 3540 11324 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-06-09 12:42:10,259 basehttp 3540 18796 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-06-09 12:42:11,939 basehttp 3540 18796 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-06-09 12:42:14,333 log 3540 11324 Not Found: /favicon.ico
+WARNING 2025-06-09 12:42:14,334 basehttp 3540 11324 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-06-09 12:42:36,126 basehttp 3540 6532 "POST /login/?next=/delivery/active/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:42:36,174 basehttp 3540 6532 "GET /delivery/dashboard/ HTTP/1.1" 200 18029
+INFO 2025-06-09 12:42:44,551 basehttp 3540 11160 "GET /delivery/history/ HTTP/1.1" 200 7790
+INFO 2025-06-09 12:42:49,722 basehttp 3540 12472 "GET /delivery/dashboard/ HTTP/1.1" 200 17748
+INFO 2025-06-09 12:43:34,300 basehttp 3540 14568 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:43:34,324 basehttp 3540 14568 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 12:43:34,411 basehttp 3540 14568 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+INFO 2025-06-09 12:43:34,416 basehttp 3540 3132 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-06-09 12:43:34,604 basehttp 3540 15004 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-06-09 12:43:34,607 basehttp 3540 3132 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+WARNING 2025-06-09 12:43:34,615 basehttp 3540 17800 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:43:34,626 basehttp 3540 19664 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:43:34,644 basehttp 3540 18300 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:43:34,658 basehttp 3540 15004 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:49:13,502 basehttp 3540 21136 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:49:13,527 basehttp 3540 21136 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 12:49:13,770 basehttp 3540 21136 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:49:13,771 basehttp 3540 21076 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:49:13,778 basehttp 3540 21032 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:49:13,779 basehttp 3540 21072 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:49:13,782 basehttp 3540 21056 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:49:31,630 basehttp 3540 9360 "GET /customer/restaurants/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:49:31,645 basehttp 3540 9360 "GET /login/?next=/customer/restaurants/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:49:40,755 basehttp 3540 9360 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 12:50:04,137 basehttp 3540 9360 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:50:04,227 basehttp 3540 9360 "GET /customer/dashboard/ HTTP/1.1" 200 22493
+INFO 2025-06-09 12:50:40,903 basehttp 3540 9360 "GET /customer/restaurants/2/ HTTP/1.1" 200 11554
+INFO 2025-06-09 12:50:40,992 basehttp 3540 9360 "GET /media/restaurant_logos/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-06-09 12:50:40,999 basehttp 3540 2964 "GET /media/menu_items/WIN_20241104_21_52_22_Pro.jpg HTTP/1.1" 200 127310
+INFO 2025-06-09 12:50:59,993 basehttp 3540 2964 "GET / HTTP/1.1" 200 19311
+WARNING 2025-06-09 12:51:00,194 basehttp 3540 2964 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:51:00,202 basehttp 3540 9360 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 12:51:00,206 basehttp 3540 21136 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:51:00,215 basehttp 3540 21076 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 12:51:00,216 basehttp 3540 18820 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 12:51:35,527 basehttp 3540 20740 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-06-09 12:51:35,646 basehttp 3540 20760 "GET /media/restaurant_logos/istockphoto-944478708-612x612.jpg HTTP/1.1" 200 49815
+INFO 2025-06-09 12:51:35,667 basehttp 3540 20740 "GET /media/restaurant_logos/a_4Z6emzZ.webp HTTP/1.1" 200 16758
+INFO 2025-06-09 12:51:39,745 basehttp 3540 20760 "GET /customer/restaurants/1/ HTTP/1.1" 200 12402
+INFO 2025-06-09 12:51:39,846 basehttp 3540 20760 "GET /media/menu_items/a.webp HTTP/1.1" 200 16758
+INFO 2025-06-09 12:51:43,804 basehttp 3540 20760 "GET /customer/cart/add/1/ HTTP/1.1" 200 8873
+INFO 2025-06-09 12:51:48,507 basehttp 3540 20760 "POST /customer/cart/add/1/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:51:48,554 basehttp 3540 20760 "GET /customer/restaurants/1/ HTTP/1.1" 200 12687
+INFO 2025-06-09 12:51:52,244 basehttp 3540 20760 "GET /customer/cart/ HTTP/1.1" 200 16433
+INFO 2025-06-09 12:51:55,198 basehttp 3540 20760 "GET /customer/checkout/ HTTP/1.1" 200 21951
+INFO 2025-06-09 12:52:11,188 util 3540 20760 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-06-09 12:52:13,802 util 3540 20760 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-06-09 12:52:13,839 basehttp 3540 20760 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-06-09 12:52:13,864 util 3540 20760 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RY2MxC1G57gfc4s0RRA4i9i
+INFO 2025-06-09 12:52:14,502 util 3540 20760 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RY2MxC1G57gfc4s0RRA4i9i response_code=200
+INFO 2025-06-09 12:52:14,526 basehttp 3540 20760 "GET /payments/process/18/ HTTP/1.1" 200 22077
+INFO 2025-06-09 12:52:50,086 basehttp 3540 20760 "GET /payments/complete/18/?payment_intent=pi_3RY2MxC1G57gfc4s0RRA4i9i&payment_intent_client_secret=pi_3RY2MxC1G57gfc4s0RRA4i9i_secret_S4Nkd5SFjo1yTt5hoRZN4DnwD&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-06-09 12:52:50,221 basehttp 3540 20760 "GET /customer/orders/18/ HTTP/1.1" 200 15118
+INFO 2025-06-09 12:53:00,749 basehttp 3540 20760 "GET /customer/orders/ HTTP/1.1" 200 26821
+INFO 2025-06-09 12:53:07,229 basehttp 3540 20760 "GET /customer/orders/18/ HTTP/1.1" 200 15118
+INFO 2025-06-09 13:10:53,491 basehttp 3540 14984 "GET /customer/orders/ HTTP/1.1" 200 26821
+INFO 2025-06-09 13:10:59,505 basehttp 3540 14984 "GET / HTTP/1.1" 200 19311
+WARNING 2025-06-09 13:10:59,708 basehttp 3540 17344 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:10:59,709 basehttp 3540 14984 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:10:59,709 basehttp 3540 21892 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 13:10:59,719 basehttp 3540 2776 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:10:59,721 basehttp 3540 22240 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 13:11:30,315 basehttp 3540 21016 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-06-09 13:11:37,439 basehttp 3540 21016 "GET /customer/restaurants/?q=dan&cuisine= HTTP/1.1" 200 13038
+INFO 2025-06-09 13:45:05,499 basehttp 3540 19148 "GET / HTTP/1.1" 200 19311
+WARNING 2025-06-09 13:45:05,639 basehttp 3540 20548 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:05,648 basehttp 3540 19148 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 13:45:05,660 basehttp 3540 20224 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:05,666 basehttp 3540 20104 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:05,667 basehttp 3540 21552 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 13:45:17,389 basehttp 3540 10856 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 13:45:17,416 basehttp 3540 10856 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 13:45:17,577 basehttp 3540 10856 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:17,578 basehttp 3540 17892 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 13:45:17,579 basehttp 3540 3096 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:17,585 basehttp 3540 4072 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 13:45:17,591 basehttp 3540 17020 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 15:18:31,555 basehttp 3540 20744 "GET /customer/restaurants/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:18:31,717 basehttp 3540 20744 "GET /login/?next=/customer/restaurants/ HTTP/1.1" 200 7081
+INFO 2025-06-09 15:18:52,751 basehttp 3540 20744 "POST /login/?next=/customer/restaurants/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:18:52,909 basehttp 3540 20744 "GET /customer/dashboard/ HTTP/1.1" 200 22494
+INFO 2025-06-09 15:19:02,395 basehttp 3540 20744 "GET /customer/restaurants/ HTTP/1.1" 200 15324
+INFO 2025-06-09 15:19:16,337 basehttp 3540 20744 "GET /customer/restaurants/1/ HTTP/1.1" 200 12402
+INFO 2025-06-09 15:19:26,923 basehttp 3540 20744 "GET /customer/cart/add/1/ HTTP/1.1" 200 8873
+INFO 2025-06-09 15:19:31,840 basehttp 3540 20744 "POST /customer/cart/add/1/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:19:31,905 basehttp 3540 20744 "GET /customer/restaurants/1/ HTTP/1.1" 200 12687
+INFO 2025-06-09 15:19:43,799 basehttp 3540 20744 "GET /customer/cart/ HTTP/1.1" 200 16433
+INFO 2025-06-09 15:19:56,764 basehttp 3540 20744 "GET /customer/restaurants/1/ HTTP/1.1" 200 12402
+INFO 2025-06-09 15:20:20,698 basehttp 3540 20744 "GET /customer/orders/ HTTP/1.1" 200 26821
+INFO 2025-06-09 15:20:31,757 basehttp 3540 20744 "GET /customer/cart/ HTTP/1.1" 200 16433
+INFO 2025-06-09 15:20:39,122 basehttp 3540 20744 "POST /customer/cart/update/13/ HTTP/1.1" 200 56
+INFO 2025-06-09 15:20:39,146 basehttp 3540 20644 "POST /customer/cart/update/13/ HTTP/1.1" 200 56
+INFO 2025-06-09 15:20:40,804 basehttp 3540 20744 "GET /customer/checkout/ HTTP/1.1" 200 22222
+INFO 2025-06-09 15:21:06,180 util 3540 20744 message='Request to Stripe api' method=post path=https://api.stripe.com/v1/payment_intents
+INFO 2025-06-09 15:21:08,776 util 3540 20744 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents response_code=200
+INFO 2025-06-09 15:21:08,818 basehttp 3540 20744 "POST /customer/checkout/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:21:08,860 util 3540 20744 message='Request to Stripe api' method=get path=https://api.stripe.com/v1/payment_intents/pi_3RY4h5C1G57gfc4s1bh4C4C2
+INFO 2025-06-09 15:21:09,478 util 3540 20744 message='Stripe API response' path=https://api.stripe.com/v1/payment_intents/pi_3RY4h5C1G57gfc4s1bh4C4C2 response_code=200
+INFO 2025-06-09 15:21:09,522 basehttp 3540 20744 "GET /payments/process/19/ HTTP/1.1" 200 22077
+INFO 2025-06-09 15:22:05,319 basehttp 3540 20744 "GET /payments/complete/19/?payment_intent=pi_3RY4h5C1G57gfc4s1bh4C4C2&payment_intent_client_secret=pi_3RY4h5C1G57gfc4s1bh4C4C2_secret_F4ftvh2m6bUhzHdmELFmEA6dg&redirect_status=succeeded HTTP/1.1" 302 0
+INFO 2025-06-09 15:22:05,466 basehttp 3540 20744 "GET /customer/orders/19/ HTTP/1.1" 200 15120
+INFO 2025-06-09 15:23:48,660 basehttp 3540 20744 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:23:48,721 basehttp 3540 20744 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 15:23:48,971 basehttp 3540 20744 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:23:48,990 basehttp 3540 24008 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 15:23:48,995 basehttp 3540 20936 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:23:49,001 basehttp 3540 1564 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:23:49,001 basehttp 3540 12120 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 15:23:54,143 basehttp 3540 22696 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 15:24:06,025 basehttp 3540 22696 "POST /login/ HTTP/1.1" 200 7372
+INFO 2025-06-09 15:24:19,310 basehttp 3540 22696 "POST /login/ HTTP/1.1" 200 7371
+INFO 2025-06-09 15:24:43,860 basehttp 3540 22696 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:24:44,017 basehttp 3540 22696 "GET /restaurant/dashboard/ HTTP/1.1" 200 23569
+INFO 2025-06-09 15:25:12,040 basehttp 3540 22696 "GET /restaurant/orders/19/ HTTP/1.1" 200 11950
+INFO 2025-06-09 15:25:19,826 basehttp 3540 22696 "POST /restaurant/orders/19/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:25:19,926 basehttp 3540 22696 "GET /restaurant/orders/19/ HTTP/1.1" 200 11543
+INFO 2025-06-09 15:25:25,000 basehttp 3540 22696 "POST /restaurant/orders/19/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:25:25,130 basehttp 3540 22696 "GET /restaurant/orders/19/ HTTP/1.1" 200 11563
+INFO 2025-06-09 15:25:30,386 basehttp 3540 22696 "POST /restaurant/orders/19/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:25:30,499 basehttp 3540 22696 "GET /restaurant/orders/19/ HTTP/1.1" 200 11289
+INFO 2025-06-09 15:25:36,429 basehttp 3540 22696 "GET /restaurant/orders/19/ HTTP/1.1" 200 10986
+INFO 2025-06-09 15:26:29,116 basehttp 3540 22696 "GET /customer/orders/ HTTP/1.1" 200 6594
+INFO 2025-06-09 15:26:53,564 basehttp 3540 22696 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:26:53,601 basehttp 3540 22696 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 15:26:53,859 basehttp 3540 22696 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:26:53,875 basehttp 3540 14256 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 15:26:53,882 basehttp 3540 3808 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:26:53,888 basehttp 3540 9312 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:26:53,888 basehttp 3540 5236 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 15:27:02,196 basehttp 3540 19540 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 15:27:16,358 basehttp 3540 19540 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:27:16,448 basehttp 3540 19540 "GET /customer/dashboard/ HTTP/1.1" 200 22505
+INFO 2025-06-09 15:28:18,656 basehttp 3540 19540 "GET /customer/restaurants/?q=dan&cuisine= HTTP/1.1" 200 13038
+INFO 2025-06-09 15:28:27,559 basehttp 3540 19540 "GET / HTTP/1.1" 200 19311
+WARNING 2025-06-09 15:28:27,798 basehttp 3540 19540 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 15:28:27,820 basehttp 3540 15248 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:27,823 basehttp 3540 21924 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:27,829 basehttp 3540 20216 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:27,834 basehttp 3540 11476 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 15:28:33,903 basehttp 3540 20776 "GET /logout/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:28:33,936 basehttp 3540 20776 "GET / HTTP/1.1" 200 17879
+WARNING 2025-06-09 15:28:34,132 basehttp 3540 20776 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:34,164 basehttp 3540 21176 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-06-09 15:28:34,166 basehttp 3540 19764 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:34,169 basehttp 3540 11472 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-06-09 15:28:34,184 basehttp 3540 24420 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+INFO 2025-06-09 15:28:37,538 basehttp 3540 21392 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-06-09 15:28:51,992 basehttp 3540 21392 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:28:52,056 basehttp 3540 21392 "GET /delivery/dashboard/ HTTP/1.1" 200 18029
+INFO 2025-06-09 15:28:56,561 views 3540 21392 User 5 changed availability: True -> False
+INFO 2025-06-09 15:28:56,575 basehttp 3540 21392 "POST /delivery/availability/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:28:56,673 basehttp 3540 21392 "GET /delivery/dashboard/ HTTP/1.1" 200 18043
+INFO 2025-06-09 15:28:58,950 views 3540 21392 User 5 changed availability: False -> True
+INFO 2025-06-09 15:28:58,963 basehttp 3540 21392 "POST /delivery/availability/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:28:59,052 basehttp 3540 21392 "GET /delivery/dashboard/ HTTP/1.1" 200 18043
+INFO 2025-06-09 15:29:07,867 basehttp 3540 21392 "GET /delivery/active/ HTTP/1.1" 200 28772
+INFO 2025-06-09 15:29:22,379 views 3540 21392 Order 19 assigned to user 5
+INFO 2025-06-09 15:29:22,384 views 3540 21392 Order 19 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 15:29:22,415 basehttp 3540 21392 "POST /delivery/orders/19/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:29:22,516 basehttp 3540 21392 "GET /delivery/orders/19/ HTTP/1.1" 200 10426
+INFO 2025-06-09 15:29:33,388 views 3540 21392 Order 19 status changed from out_for_delivery to delivered by user 5
+INFO 2025-06-09 15:29:33,404 basehttp 3540 21392 "POST /delivery/orders/19/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:29:33,518 basehttp 3540 21392 "GET /delivery/orders/19/ HTTP/1.1" 200 9871
+INFO 2025-06-09 15:29:56,418 basehttp 3540 21392 "GET /delivery/active/ HTTP/1.1" 200 25328
+INFO 2025-06-09 15:30:56,119 views 3540 21392 Order 8 assigned to user 5
+INFO 2025-06-09 15:30:56,125 views 3540 21392 Order 8 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 15:30:56,136 basehttp 3540 21392 "POST /delivery/orders/8/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:30:56,289 basehttp 3540 21392 "GET /delivery/orders/8/ HTTP/1.1" 200 10425
+INFO 2025-06-09 15:31:09,213 views 3540 21392 Order 16 assigned to user 5
+INFO 2025-06-09 15:31:09,217 views 3540 21392 Order 16 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 15:31:09,246 basehttp 3540 21392 "POST /delivery/orders/16/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:31:09,347 basehttp 3540 21392 "GET /delivery/orders/16/ HTTP/1.1" 200 10423
+INFO 2025-06-09 15:31:37,369 views 3540 21392 Order 16 status changed from out_for_delivery to delivered by user 5
+INFO 2025-06-09 15:31:37,389 basehttp 3540 21392 "POST /delivery/orders/16/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:31:37,530 basehttp 3540 21392 "GET /delivery/orders/16/ HTTP/1.1" 200 9868
+INFO 2025-06-09 15:32:01,709 views 3540 21392 Order 7 assigned to user 5
+INFO 2025-06-09 15:32:01,715 views 3540 21392 Order 7 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 15:32:01,748 basehttp 3540 21392 "POST /delivery/orders/7/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:32:01,863 basehttp 3540 21392 "GET /delivery/orders/7/ HTTP/1.1" 200 10425
+INFO 2025-06-09 15:32:16,891 views 3540 21392 Order 17 assigned to user 5
+INFO 2025-06-09 15:32:16,896 views 3540 21392 Order 17 status changed from ready_for_pickup to out_for_delivery by user 5
+INFO 2025-06-09 15:32:16,914 basehttp 3540 21392 "POST /delivery/orders/17/update-status/ HTTP/1.1" 302 0
+INFO 2025-06-09 15:32:17,031 basehttp 3540 21392 "GET /delivery/orders/17/ HTTP/1.1" 200 10425
+INFO 2025-07-09 16:23:25,837 autoreload 10196 26596 Watching for file changes with StatReloader
+INFO 2025-07-09 16:25:33,384 autoreload 7308 27180 Watching for file changes with StatReloader
+INFO 2025-07-09 16:25:52,968 basehttp 7308 14628 "GET / HTTP/1.1" 200 17583
+WARNING 2025-07-09 16:25:53,285 basehttp 7308 13432 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-07-09 16:25:53,290 basehttp 7308 20216 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+INFO 2025-07-09 16:25:53,725 basehttp 7308 9676 "GET /media/restaurant_banners/istockphoto-2184330237-612x612.jpg HTTP/1.1" 200 26122
+INFO 2025-07-09 16:25:53,744 basehttp 7308 11180 "GET /media/restaurant_banners/istockphoto-1428412216-612x612.jpg HTTP/1.1" 200 25034
+INFO 2025-07-09 16:25:53,754 basehttp 7308 14628 "GET /static/images/logo.png HTTP/1.1" 200 31612
+INFO 2025-07-09 16:25:53,758 basehttp 7308 15432 "GET /static/django-browser-reload/reload-listener.js HTTP/1.1" 200 623
+INFO 2025-07-09 16:25:53,875 basehttp 7308 16096 "GET /media/restaurant_banners/istockphoto-857927726-612x612.jpg HTTP/1.1" 200 59456
+INFO 2025-07-09 16:25:53,934 basehttp 7308 21036 "GET /static/js/main.js HTTP/1.1" 200 934
+WARNING 2025-07-09 16:25:54,300 basehttp 7308 25840 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:54,303 basehttp 7308 23412 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:54,306 basehttp 7308 20468 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:56,115 basehttp 7308 21312 "GET /static/images/hero-food.png HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:56,127 basehttp 7308 19336 "GET /static/images/app-mockup.png HTTP/1.1" 404 1923
+WARNING 2025-07-09 16:25:56,129 basehttp 7308 13952 "GET /static/images/customer3.jpg HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:56,135 basehttp 7308 22416 "GET /static/images/customer1.jpg HTTP/1.1" 404 1920
+WARNING 2025-07-09 16:25:56,135 basehttp 7308 14644 "GET /static/images/customer2.jpg HTTP/1.1" 404 1920
+INFO 2025-07-09 16:25:56,438 basehttp 7308 14780 "GET /static/django-browser-reload/reload-worker.js HTTP/1.1" 200 2711
+WARNING 2025-07-09 16:25:56,583 log 7308 16516 Not Found: /favicon.ico
+WARNING 2025-07-09 16:25:56,584 basehttp 7308 16516 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2025-07-09 16:26:02,245 basehttp 7308 16516 "GET /login/ HTTP/1.1" 200 7081
+INFO 2025-07-09 16:26:11,332 basehttp 7308 16516 "POST /login/ HTTP/1.1" 200 7376
+INFO 2025-07-09 16:26:23,529 basehttp 7308 16516 "POST /login/ HTTP/1.1" 200 7376
+INFO 2025-07-09 16:26:42,133 basehttp 7308 16516 "POST /login/ HTTP/1.1" 200 7376
+INFO 2025-07-09 16:27:00,092 basehttp 7308 28704 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-07-09 16:27:26,008 basehttp 7308 28704 "GET /delivery/dashboard/ HTTP/1.1" 200 18029

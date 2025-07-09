@@ -31,3 +31,7 @@ class DeliveryReview(models.Model):
         return f"Delivery Review for {self.delivery_person.username} - Order #{self.order.id}"
 
 
+# In models.py
+class OrderManager(models.Manager):
+    def available_for_pickup(self):
+        return self.filter(status='ready_for_pickup', delivery_person__isnull=True)

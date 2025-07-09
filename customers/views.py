@@ -228,7 +228,7 @@ def update_cart_item(request, cart_item_id):
 @login_required
 def checkout(request):
     """Checkout process"""
-    publishable_key = settings.STRIPE_PUBLISHABLE_KEY
+    publishable_key = settings.STRIPE_PUBLIC_KEY
     cart = get_object_or_404(Cart, customer=request.user)
     
     if not cart.items.exists():
